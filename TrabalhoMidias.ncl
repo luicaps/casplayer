@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ncl id="myNCLDocID" xmlns="http://www.ncl.org.br/NCL3.0/EDTVProfile">
+	<head>
+		<!--connectorBase-->
+		<connectorBase id="connBaseId">
+			<importBase alias="conn" documentURI="defaultConnBase.ncl"/>
+			<causalConnector id="onEndFocusTestStopStart">
+				<compoundCondition operator="and">
+					<simpleCondition max="unbounded" role="onEndAttribution"/>
+					<assessmentStatement comparator="eq">
+						<attributeAssessment role="onFocus" eventType="attribution" attributeType="nodeProperty"/>
+						<valueAssessment value="$val"/>
+					</assessmentStatement>
+					<assessmentStatement comparator="eq">
+						<attributeAssessment role="previus" eventType="attribution" attributeType="nodeProperty"/>
+						<valueAssessment value="$val"/>
+					</assessmentStatement>
+				</compoundCondition>
+				<compoundAction operator="seq">
+					<simpleAction max="unbounded" role="stop"/>
+					<simpleAction max="unbounded" role="start"/>
+				</compoundAction>
+			</causalConnector>
+			<causalConnector id="onSelectionStopStart">
+				<simpleCondition role="onSelection"/>
+				<compoundAction operator="seq">
+					<simpleAction max="unbounded" role="stop"/>
+					<simpleAction max="unbounded" role="start"/>
+				</compoundAction>
+			</causalConnector>
+		</connectorBase>
+		<regionBase id="regionBase">
+			<region id="RD" top="0%" left="0%" width="2%" height="2%" zIndex="0"/>
+			<region height="100.00%" id="region0" left="0.00%" top="0.00%" width="100.00%" zIndex="1">
+				<region height="80%" id="region1" left="0.00%" top="0.00%" width="50%" zIndex="2"/>
+				<region height="80%" id="region2" left="50.00%" top="0.00%" width="50.00%" zIndex="3"/>
+				<region height="20.00%" id="region3" left="0.00%" top="80.00%" width="100.00%" zIndex="4">
+					<region height="90.00%" id="region4" left="1%" top="4.17%" width="13.00%" zIndex="5"/>
+					<region height="90%" id="region5" left="15%" top="5.5%" width="13%" zIndex="5"/>
+					<region height="90%" id="region6" left="29%" top="5.5%" width="13%" zIndex="5"/>
+					<region height="90%" id="region7" left="43%" top="5.5%" width="13%" zIndex="5"/>
+					<region height="90%" id="region8" left="57%" top="5.5%" width="13%" zIndex="5"/>
+					<region height="90%" id="region9" left="71%" top="5.5%" width="13%" zIndex="5"/>
+					<region height="90%" id="region10" left="85%" top="5.5%" width="13%" zIndex="5"/>
+				</region>
+			</region>
+		</regionBase>
+		<descriptorBase id="descriptorBase">
+			<descriptor id="VideoDesc" region="region1"/>
+			<descriptor id="SlideMenuDesc" region="region3"/>
+			<descriptor id="M1Desc" region="region4" focusIndex="1" moveRight="2"/>
+			<descriptor id="M2Desc" region="region5" focusIndex="2" moveRight="3" moveLeft="1"/>
+			<descriptor id="M3Desc" region="region6" focusIndex="3" moveRight="4" moveLeft="2"/>
+			<descriptor id="M4Desc" region="region7" focusIndex="4" moveRight="5" moveLeft="3"/>
+			<descriptor id="M5Desc" region="region8" focusIndex="5" moveRight="6" moveLeft="4"/>
+			<descriptor id="M6Desc" region="region9" focusIndex="6" moveRight="7" moveLeft="5"/>
+			<descriptor id="M7Desc" region="region10" focusIndex="7" moveRight="8" moveLeft="6"/>
+			<descriptor id="D7" region="RD" focusIndex="7" moveLeft="6" moveRight="8"/>
+			<descriptor id="D8" region="RD" focusIndex="8" moveLeft="7" moveRight="9"/>
+			<descriptor id="M8Desc" region="region4" focusIndex="8" moveRight="9"/>
+			<descriptor id="M9Desc" region="region5" focusIndex="9" moveRight="10" moveLeft="8"/>
+			<descriptor id="M10Desc" region="region6" focusIndex="10" moveRight="11" moveLeft="9"/>
+			<descriptor id="M11Desc" region="region7" focusIndex="11" moveRight="12" moveLeft="10"/>
+			<descriptor id="M12Desc" region="region8" focusIndex="12" moveRight="13" moveLeft="11"/>
+			<descriptor id="M13Desc" region="region9" focusIndex="13" moveRight="14" moveLeft="12"/>
+			<descriptor id="M14Desc" region="region10" focusIndex="14" moveLeft="13"/>
+			<descriptor id="T1S1Desc" region="region2" explicitDur="38.39800000190735s"/>
+			<descriptor id="T2S2Desc" region="region2" explicitDur="14.191999912261963s"/>
+			<descriptor id="T3S3Desc" region="region2" explicitDur="99.72399997711182s"/>
+			<descriptor id="T4S4Desc" region="region2" explicitDur="39.455000162124634s"/>
+			<descriptor id="T5S5Desc" region="region2" explicitDur="37.484999895095825s"/>
+			<descriptor id="T6S6Desc" region="region2" explicitDur="20.29200005531311s"/>
+			<descriptor id="T7S7Desc" region="region2" explicitDur="87.22399997711182s"/>
+			<descriptor id="T8S8Desc" region="region2" explicitDur="51.668999910354614s"/>
+			<descriptor id="T9S9Desc" region="region2" explicitDur="78.28800010681152s"/>
+			<descriptor id="T10S10Desc" region="region2" explicitDur="19.07200002670288s"/>
+			<descriptor id="T11S11Desc" region="region2" explicitDur="3.9200000762939453s"/>
+			<descriptor id="T12S12Desc" region="region2" explicitDur="31.658999919891357s"/>
+			<descriptor id="T13S13Desc" region="region2" explicitDur="259.07999992370605s"/>
+			<descriptor id="T14S14Desc" region="region2" explicitDur="38.31599998474121s"/>
+			<descriptor id="T15S15Desc" region="region2" explicitDur="102.89199995994568s"/>
+			<descriptor id="T16S16Desc" region="region2" explicitDur="26.591000080108643s"/>
+			<descriptor id="T17S17Desc" region="region2" explicitDur="10.029000043869019s"/>
+			<descriptor id="T18S18Desc" region="region2" explicitDur="53.76099991798401s"/>
+			<descriptor id="T19S19Desc" region="region2" explicitDur="23.26800012588501s"/>
+			<descriptor id="T20S20Desc" region="region2" explicitDur="45.514999866485596s"/>
+			<descriptor id="T21S21Desc" region="region2" explicitDur="28.50100016593933s"/>
+			<descriptor id="T22S22Desc" region="region2" explicitDur="40.48099994659424s"/>
+			<descriptor id="T23S23Desc" region="region2" explicitDur="27.35699987411499s"/>
+			<descriptor id="T24S24Desc" region="region2" explicitDur="7.6600000858306885s"/>
+			<descriptor id="T25S25Desc" region="region2" explicitDur="6.072999954223633s"/>
+			<descriptor id="T26S26Desc" region="region2" explicitDur="85.06700015068054s"/>
+			<descriptor id="T27S27Desc" region="region2" explicitDur="8.81499981880188s"/>
+			<descriptor id="T28S28Desc" region="region2" explicitDur="13.406000137329102s"/>
+			<descriptor id="T29S29Desc" region="region2" explicitDur="8.319000005722046s"/>
+			<descriptor id="T30S30Desc" region="region2" explicitDur="6.138000011444092s"/>
+			<descriptor id="T31S31Desc" region="region2" explicitDur="112.85599994659424s"/>
+			<descriptor id="T32S32Desc" region="region2" explicitDur="88.90700006484985s"/>
+			<descriptor id="T33S33Desc" region="region2" explicitDur="24.717999935150146s"/>
+			<descriptor id="T34S34Desc" region="region2" explicitDur="87.08500003814697s"/>
+			<descriptor id="T35S35Desc" region="region2" explicitDur="14.093999862670898s"/>
+			<descriptor id="T36S36Desc" region="region2" explicitDur="160.00800013542175s"/>
+			<descriptor id="T37S35Desc" region="region2" explicitDur="19.598000049591064s"/>
+			<descriptor id="T38S37Desc" region="region2" explicitDur="5.162999868392944s"/>
+			<descriptor id="T39S38Desc" region="region2" explicitDur="21.269999980926514s"/>
+			<descriptor id="T40S39Desc" region="region2" explicitDur="18.947999954223633s"/>
+			<descriptor id="T41S40Desc" region="region2" explicitDur="71.41000008583069s"/>
+			<descriptor id="T42S41Desc" region="region2" explicitDur="24.062000036239624s"/>
+			<descriptor id="T43S40Desc" region="region2" explicitDur="6.664999961853027s"/>
+			<descriptor id="T44S41Desc" region="region2" explicitDur="28.352999925613403s"/>
+			<descriptor id="T45S42Desc" region="region2" explicitDur="45.99900007247925s"/>
+			<descriptor id="T46S43Desc" region="region2" explicitDur="18.29200005531311s"/>
+			<descriptor id="T47S44Desc" region="region2" explicitDur="2.6640000343322754s"/>
+			<descriptor id="T48S43Desc" region="region2" explicitDur="7.896999835968018s"/>
+			<descriptor id="T49S44Desc" region="region2" explicitDur="11.01800012588501s"/>
+			<descriptor id="T50S45Desc" region="region2" explicitDur="25.35800004005432s"/>
+			<descriptor id="T51S44Desc" region="region2" explicitDur="4.218999862670898s"/>
+			<descriptor id="T52S42Desc" region="region2" explicitDur="1.558000087738037s"/>
+			<descriptor id="T53S40Desc" region="region2" explicitDur="2.8610000610351562s"/>
+			<descriptor id="T54S38Desc" region="region2" explicitDur="7.773999929428101s"/>
+			<descriptor id="T55S39Desc" region="region2" explicitDur="8.520999908447266s"/>
+			<descriptor id="T56S40Desc" region="region2" explicitDur="12.098000049591064s"/>
+			<descriptor id="T57S41Desc" region="region2" explicitDur="1.066999912261963s"/>
+			<descriptor id="T58S43Desc" region="region2" explicitDur="3.698000192642212s"/>
+			<descriptor id="T59S45Desc" region="region2" explicitDur="15.198999881744385s"/>
+			<descriptor id="T60S46Desc" region="region2" explicitDur="20.727999925613403s"/>
+			<descriptor id="T61S45Desc" region="region2" explicitDur="22.063000202178955s"/>
+			<descriptor id="T62S46Desc" region="region2" explicitDur="78.867999792099s"/>
+			<descriptor id="T63S47Desc" region="region2" explicitDur="2.370000123977661s"/>
+			<descriptor id="T64S48Desc" region="region2" explicitDur="1.36899995803833s"/>
+			<descriptor id="T65S47Desc" region="region2" explicitDur="1.2839999198913574s"/>
+			<descriptor id="T66S48Desc" region="region2" explicitDur="25.29200005531311s"/>
+			<descriptor id="T67S49Desc" region="region2" explicitDur="54.5220000743866s"/>
+			<descriptor id="T68S50Desc" region="region2" explicitDur="32.91000008583069s"/>
+			<descriptor id="T69S51Desc" region="region2" explicitDur="2.735999822616577s"/>
+			<descriptor id="T70S50Desc" region="region2" explicitDur="2.1630001068115234s"/>
+			<descriptor id="T71S51Desc" region="region2" explicitDur="26.628000020980835s"/>
+			<descriptor id="T72S52Desc" region="region2" explicitDur="3.6610000133514404s"/>
+			<descriptor id="T73S53Desc" region="region2" explicitDur="3.7860000133514404s"/>
+			<descriptor id="T74S52Desc" region="region2" explicitDur="1.2809998989105225s"/>
+			<descriptor id="T75S51Desc" region="region2" explicitDur="69.66600012779236s"/>
+			<descriptor id="T76S50Desc" region="region2" explicitDur="72.57099986076355s"/>
+			<descriptor id="T77S52Desc" region="region2" explicitDur="1.8440001010894775s"/>
+			<descriptor id="T78S53Desc" region="region2" explicitDur="61.217000007629395s"/>
+			<descriptor id="T79S51Desc" region="region2" explicitDur="1.7969999313354492s"/>
+			<descriptor id="T80S52Desc" region="region2" explicitDur="3.5290000438690186s"/>
+			<descriptor id="T81S53Desc" region="region2" explicitDur="15.842000007629395s"/>
+			<descriptor id="T82S54Desc" region="region2" explicitDur="16.944000005722046s"/>
+			<descriptor id="T83S55Desc" region="region2" explicitDur="5.921000003814697s"/>
+			<descriptor id="T84S54Desc" region="region2" explicitDur="2.5769999027252197s"/>
+			<descriptor id="T85S55Desc" region="region2" explicitDur="13.725000143051147s"/>
+			<descriptor id="T86S56Desc" region="region2" explicitDur="1.0949997901916504s"/>
+			<descriptor id="T87S57Desc" region="region2" explicitDur="94.03600001335144s"/>
+			<descriptor id="T88S58Desc" region="region2" explicitDur="31.784000158309937s"/>
+			<descriptor id="T89S59Desc" region="region2" explicitDur="2.2309999465942383s"/>
+			<descriptor id="T90S60Desc" region="region2" explicitDur="1021.0090000629425s"/>
+			<descriptor id="T91S59Desc" region="region2" explicitDur="43.3439998626709s"/>
+			<descriptor id="T92S60Desc" region="region2" explicitDur="9.414999961853027s"/>
+			<descriptor id="T93S61Desc" region="region2" explicitDur="2.4680001735687256s"/>
+			<descriptor id="T94S60Desc" region="region2" explicitDur="1.7039999961853027s"/>
+			<descriptor id="T95S61Desc" region="region2" explicitDur="1.806999921798706s"/>
+			<descriptor id="T96S62Desc" region="region2" explicitDur="257.97199988365173s"/>
+			<descriptor id="T97S61Desc" region="region2" explicitDur="21.35800004005432s"/>
+			<descriptor id="T98S62Desc" region="region2" explicitDur="50.343000173568726s"/>
+		</descriptorBase>
+	</head>
+	<body>
+		<port id="Begin" component="Video"/>
+		<media id="Video" src="raw/video/192.168.108.1(projeto-cas)/videoSCV01375449316875.mp4" descriptor="VideoDesc">
+			<area id="AT2S2" begin="38.39800000190735"/>
+			<area id="AT3S3" begin="52.58999991416931"/>
+			<area id="AT4S4" begin="152.31399989128113"/>
+			<area id="AT5S5" begin="191.76900005340576"/>
+			<area id="AT6S6" begin="229.2539999485016"/>
+			<area id="AT7S7" begin="249.5460000038147"/>
+			<area id="AT8S8" begin="336.7699999809265"/>
+			<area id="AT9S9" begin="388.4389998912811"/>
+			<area id="AT10S10" begin="466.72699999809265"/>
+			<area id="AT11S11" begin="485.79900002479553"/>
+			<area id="AT12S12" begin="489.7190001010895"/>
+			<area id="AT13S13" begin="521.3780000209808"/>
+			<area id="AT14S14" begin="780.4579999446869"/>
+			<area id="AT15S15" begin="818.7739999294281"/>
+			<area id="AT16S16" begin="921.6659998893738"/>
+			<area id="AT17S17" begin="948.2569999694824"/>
+			<area id="AT18S18" begin="958.2860000133514"/>
+			<area id="AT19S19" begin="1012.0469999313354"/>
+			<area id="AT20S20" begin="1035.3150000572205"/>
+			<area id="AT21S21" begin="1080.829999923706"/>
+			<area id="AT22S22" begin="1109.3310000896454"/>
+			<area id="AT23S23" begin="1149.8120000362396"/>
+			<area id="AT24S24" begin="1177.1689999103546"/>
+			<area id="AT25S25" begin="1184.8289999961853"/>
+			<area id="AT26S26" begin="1190.901999950409"/>
+			<area id="AT27S27" begin="1275.9690001010895"/>
+			<area id="AT28S28" begin="1284.7839999198914"/>
+			<area id="AT29S29" begin="1298.1900000572205"/>
+			<area id="AT30S30" begin="1306.5090000629425"/>
+			<area id="AT31S31" begin="1312.6470000743866"/>
+			<area id="AT32S32" begin="1425.5030000209808"/>
+			<area id="AT33S33" begin="1514.4100000858307"/>
+			<area id="AT34S34" begin="1539.1280000209808"/>
+			<area id="AT35S35" begin="1626.2130000591278"/>
+			<area id="AT36S36" begin="1640.3069999217987"/>
+			<area id="AT37S35" begin="1800.3150000572205"/>
+			<area id="AT38S37" begin="1819.9130001068115"/>
+			<area id="AT39S38" begin="1825.0759999752045"/>
+			<area id="AT40S39" begin="1846.345999956131"/>
+			<area id="AT41S40" begin="1865.2939999103546"/>
+			<area id="AT42S41" begin="1936.7039999961853"/>
+			<area id="AT43S40" begin="1960.766000032425"/>
+			<area id="AT44S41" begin="1967.430999994278"/>
+			<area id="AT45S42" begin="1995.7839999198914"/>
+			<area id="AT46S43" begin="2041.7829999923706"/>
+			<area id="AT47S44" begin="2060.0750000476837"/>
+			<area id="AT48S43" begin="2062.739000082016"/>
+			<area id="AT49S44" begin="2070.635999917984"/>
+			<area id="AT50S45" begin="2081.654000043869"/>
+			<area id="AT51S44" begin="2107.0120000839233"/>
+			<area id="AT52S42" begin="2111.2309999465942"/>
+			<area id="AT53S40" begin="2112.7890000343323"/>
+			<area id="AT54S38" begin="2115.6500000953674"/>
+			<area id="AT55S39" begin="2123.4240000247955"/>
+			<area id="AT56S40" begin="2131.944999933243"/>
+			<area id="AT57S41" begin="2144.042999982834"/>
+			<area id="AT58S43" begin="2145.109999895096"/>
+			<area id="AT59S45" begin="2148.808000087738"/>
+			<area id="AT60S46" begin="2164.0069999694824"/>
+			<area id="AT61S45" begin="2184.734999895096"/>
+			<area id="AT62S46" begin="2206.798000097275"/>
+			<area id="AT63S47" begin="2285.665999889374"/>
+			<area id="AT64S48" begin="2288.0360000133514"/>
+			<area id="AT65S47" begin="2289.4049999713898"/>
+			<area id="AT66S48" begin="2290.688999891281"/>
+			<area id="AT67S49" begin="2315.9809999465942"/>
+			<area id="AT68S50" begin="2370.503000020981"/>
+			<area id="AT69S51" begin="2403.4130001068115"/>
+			<area id="AT70S50" begin="2406.148999929428"/>
+			<area id="AT71S51" begin="2408.3120000362396"/>
+			<area id="AT72S52" begin="2434.9400000572205"/>
+			<area id="AT73S53" begin="2438.601000070572"/>
+			<area id="AT74S52" begin="2442.3870000839233"/>
+			<area id="AT75S51" begin="2443.667999982834"/>
+			<area id="AT76S50" begin="2513.334000110626"/>
+			<area id="AT77S52" begin="2585.9049999713898"/>
+			<area id="AT78S53" begin="2587.7490000724792"/>
+			<area id="AT79S51" begin="2648.9660000801086"/>
+			<area id="AT80S52" begin="2650.763000011444"/>
+			<area id="AT81S53" begin="2654.292000055313"/>
+			<area id="AT82S54" begin="2670.1340000629425"/>
+			<area id="AT83S55" begin="2687.0780000686646"/>
+			<area id="AT84S54" begin="2692.9990000724792"/>
+			<area id="AT85S55" begin="2695.5759999752045"/>
+			<area id="AT86S56" begin="2709.3010001182556"/>
+			<area id="AT87S57" begin="2710.3959999084473"/>
+			<area id="AT88S58" begin="2804.4319999217987"/>
+			<area id="AT89S59" begin="2836.2160000801086"/>
+			<area id="AT90S60" begin="2838.447000026703"/>
+			<area id="AT91S59" begin="3859.4560000896454"/>
+			<area id="AT92S60" begin="3902.7999999523163"/>
+			<area id="AT93S61" begin="3912.2149999141693"/>
+			<area id="AT94S60" begin="3914.683000087738"/>
+			<area id="AT95S61" begin="3916.3870000839233"/>
+			<area id="AT96S62" begin="3918.194000005722"/>
+			<area id="AT97S61" begin="4176.165999889374"/>
+			<area id="AT98S62" begin="4197.523999929428"/>
+		</media>
+		<link xconnector="conn#onBeginStart">
+			<bind role="onBegin" component="Video"/>
+			<bind role="start" component="Slides" interface="T1S1Port"/>
+			<bind role="start" component="SlideMenu" interface="S1P"/>
+			<bind role="start" component="SlideMenu" interface="S2P"/>
+			<bind role="start" component="SlideMenu" interface="S3P"/>
+			<bind role="start" component="SlideMenu" interface="S4P"/>
+			<bind role="start" component="SlideMenu" interface="S5P"/>
+			<bind role="start" component="SlideMenu" interface="S6P"/>
+			<bind role="start" component="SlideMenu" interface="S7P"/>
+			<bind role="start" component="D" interface="PMD8"/>
+		</link>
+		<context id="Slides">
+			<port id="T1S1Port" component="T1S1"/>
+			<port id="T2S2Port" component="T2S2"/>
+			<port id="T3S3Port" component="T3S3"/>
+			<port id="T4S4Port" component="T4S4"/>
+			<port id="T5S5Port" component="T5S5"/>
+			<port id="T6S6Port" component="T6S6"/>
+			<port id="T7S7Port" component="T7S7"/>
+			<port id="T8S8Port" component="T8S8"/>
+			<port id="T9S9Port" component="T9S9"/>
+			<port id="T10S10Port" component="T10S10"/>
+			<port id="T11S11Port" component="T11S11"/>
+			<port id="T12S12Port" component="T12S12"/>
+			<port id="T13S13Port" component="T13S13"/>
+			<port id="T14S14Port" component="T14S14"/>
+			<port id="T15S15Port" component="T15S15"/>
+			<port id="T16S16Port" component="T16S16"/>
+			<port id="T17S17Port" component="T17S17"/>
+			<port id="T18S18Port" component="T18S18"/>
+			<port id="T19S19Port" component="T19S19"/>
+			<port id="T20S20Port" component="T20S20"/>
+			<port id="T21S21Port" component="T21S21"/>
+			<port id="T22S22Port" component="T22S22"/>
+			<port id="T23S23Port" component="T23S23"/>
+			<port id="T24S24Port" component="T24S24"/>
+			<port id="T25S25Port" component="T25S25"/>
+			<port id="T26S26Port" component="T26S26"/>
+			<port id="T27S27Port" component="T27S27"/>
+			<port id="T28S28Port" component="T28S28"/>
+			<port id="T29S29Port" component="T29S29"/>
+			<port id="T30S30Port" component="T30S30"/>
+			<port id="T31S31Port" component="T31S31"/>
+			<port id="T32S32Port" component="T32S32"/>
+			<port id="T33S33Port" component="T33S33"/>
+			<port id="T34S34Port" component="T34S34"/>
+			<port id="T35S35Port" component="T35S35"/>
+			<port id="T36S36Port" component="T36S36"/>
+			<port id="T37S35Port" component="T37S35"/>
+			<port id="T38S37Port" component="T38S37"/>
+			<port id="T39S38Port" component="T39S38"/>
+			<port id="T40S39Port" component="T40S39"/>
+			<port id="T41S40Port" component="T41S40"/>
+			<port id="T42S41Port" component="T42S41"/>
+			<port id="T43S40Port" component="T43S40"/>
+			<port id="T44S41Port" component="T44S41"/>
+			<port id="T45S42Port" component="T45S42"/>
+			<port id="T46S43Port" component="T46S43"/>
+			<port id="T47S44Port" component="T47S44"/>
+			<port id="T48S43Port" component="T48S43"/>
+			<port id="T49S44Port" component="T49S44"/>
+			<port id="T50S45Port" component="T50S45"/>
+			<port id="T51S44Port" component="T51S44"/>
+			<port id="T52S42Port" component="T52S42"/>
+			<port id="T53S40Port" component="T53S40"/>
+			<port id="T54S38Port" component="T54S38"/>
+			<port id="T55S39Port" component="T55S39"/>
+			<port id="T56S40Port" component="T56S40"/>
+			<port id="T57S41Port" component="T57S41"/>
+			<port id="T58S43Port" component="T58S43"/>
+			<port id="T59S45Port" component="T59S45"/>
+			<port id="T60S46Port" component="T60S46"/>
+			<port id="T61S45Port" component="T61S45"/>
+			<port id="T62S46Port" component="T62S46"/>
+			<port id="T63S47Port" component="T63S47"/>
+			<port id="T64S48Port" component="T64S48"/>
+			<port id="T65S47Port" component="T65S47"/>
+			<port id="T66S48Port" component="T66S48"/>
+			<port id="T67S49Port" component="T67S49"/>
+			<port id="T68S50Port" component="T68S50"/>
+			<port id="T69S51Port" component="T69S51"/>
+			<port id="T70S50Port" component="T70S50"/>
+			<port id="T71S51Port" component="T71S51"/>
+			<port id="T72S52Port" component="T72S52"/>
+			<port id="T73S53Port" component="T73S53"/>
+			<port id="T74S52Port" component="T74S52"/>
+			<port id="T75S51Port" component="T75S51"/>
+			<port id="T76S50Port" component="T76S50"/>
+			<port id="T77S52Port" component="T77S52"/>
+			<port id="T78S53Port" component="T78S53"/>
+			<port id="T79S51Port" component="T79S51"/>
+			<port id="T80S52Port" component="T80S52"/>
+			<port id="T81S53Port" component="T81S53"/>
+			<port id="T82S54Port" component="T82S54"/>
+			<port id="T83S55Port" component="T83S55"/>
+			<port id="T84S54Port" component="T84S54"/>
+			<port id="T85S55Port" component="T85S55"/>
+			<port id="T86S56Port" component="T86S56"/>
+			<port id="T87S57Port" component="T87S57"/>
+			<port id="T88S58Port" component="T88S58"/>
+			<port id="T89S59Port" component="T89S59"/>
+			<port id="T90S60Port" component="T90S60"/>
+			<port id="T91S59Port" component="T91S59"/>
+			<port id="T92S60Port" component="T92S60"/>
+			<port id="T93S61Port" component="T93S61"/>
+			<port id="T94S60Port" component="T94S60"/>
+			<port id="T95S61Port" component="T95S61"/>
+			<port id="T96S62Port" component="T96S62"/>
+			<port id="T97S61Port" component="T97S61"/>
+			<port id="T98S62Port" component="T98S62"/>
+			<media id="T1S1" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="T1S1Desc"/>
+			<media id="T2S2" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide2.png" descriptor="T2S2Desc"/>
+			<media id="T3S3" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide3.png" descriptor="T3S3Desc"/>
+			<media id="T4S4" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide4.png" descriptor="T4S4Desc"/>
+			<media id="T5S5" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide5.png" descriptor="T5S5Desc"/>
+			<media id="T6S6" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide6.png" descriptor="T6S6Desc"/>
+			<media id="T7S7" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide7.png" descriptor="T7S7Desc"/>
+			<media id="T8S8" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide8.png" descriptor="T8S8Desc"/>
+			<media id="T9S9" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide9.png" descriptor="T9S9Desc"/>
+			<media id="T10S10" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide10.png" descriptor="T10S10Desc"/>
+			<media id="T11S11" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide11.png" descriptor="T11S11Desc"/>
+			<media id="T12S12" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide12.png" descriptor="T12S12Desc"/>
+			<media id="T13S13" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide13.png" descriptor="T13S13Desc"/>
+			<media id="T14S14" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="T14S14Desc"/>
+			<media id="T15S15" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide15.png" descriptor="T15S15Desc"/>
+			<media id="T16S16" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide16.png" descriptor="T16S16Desc"/>
+			<media id="T17S17" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide17.png" descriptor="T17S17Desc"/>
+			<media id="T18S18" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide18.png" descriptor="T18S18Desc"/>
+			<media id="T19S19" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide19.png" descriptor="T19S19Desc"/>
+			<media id="T20S20" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide20.png" descriptor="T20S20Desc"/>
+			<media id="T21S21" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide21.png" descriptor="T21S21Desc"/>
+			<media id="T22S22" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide22.png" descriptor="T22S22Desc"/>
+			<media id="T23S23" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide23.png" descriptor="T23S23Desc"/>
+			<media id="T24S24" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide24.png" descriptor="T24S24Desc"/>
+			<media id="T25S25" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide25.png" descriptor="T25S25Desc"/>
+			<media id="T26S26" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide26.png" descriptor="T26S26Desc"/>
+			<media id="T27S27" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide27.png" descriptor="T27S27Desc"/>
+			<media id="T28S28" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide28.png" descriptor="T28S28Desc"/>
+			<media id="T29S29" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide29.png" descriptor="T29S29Desc"/>
+			<media id="T30S30" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide30.png" descriptor="T30S30Desc"/>
+			<media id="T31S31" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide31.png" descriptor="T31S31Desc"/>
+			<media id="T32S32" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide32.png" descriptor="T32S32Desc"/>
+			<media id="T33S33" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide33.png" descriptor="T33S33Desc"/>
+			<media id="T34S34" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide34.png" descriptor="T34S34Desc"/>
+			<media id="T35S35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="T35S35Desc"/>
+			<media id="T36S36" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide36.png" descriptor="T36S36Desc"/>
+			<media id="T37S35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="T37S35Desc"/>
+			<media id="T38S37" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide37.png" descriptor="T38S37Desc"/>
+			<media id="T39S38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="T39S38Desc"/>
+			<media id="T40S39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="T40S39Desc"/>
+			<media id="T41S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="T41S40Desc"/>
+			<media id="T42S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="T42S41Desc"/>
+			<media id="T43S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="T43S40Desc"/>
+			<media id="T44S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="T44S41Desc"/>
+			<media id="T45S42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="T45S42Desc"/>
+			<media id="T46S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="T46S43Desc"/>
+			<media id="T47S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="T47S44Desc"/>
+			<media id="T48S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="T48S43Desc"/>
+			<media id="T49S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="T49S44Desc"/>
+			<media id="T50S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="T50S45Desc"/>
+			<media id="T51S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="T51S44Desc"/>
+			<media id="T52S42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="T52S42Desc"/>
+			<media id="T53S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="T53S40Desc"/>
+			<media id="T54S38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="T54S38Desc"/>
+			<media id="T55S39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="T55S39Desc"/>
+			<media id="T56S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="T56S40Desc"/>
+			<media id="T57S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="T57S41Desc"/>
+			<media id="T58S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="T58S43Desc"/>
+			<media id="T59S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="T59S45Desc"/>
+			<media id="T60S46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="T60S46Desc"/>
+			<media id="T61S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="T61S45Desc"/>
+			<media id="T62S46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="T62S46Desc"/>
+			<media id="T63S47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="T63S47Desc"/>
+			<media id="T64S48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="T64S48Desc"/>
+			<media id="T65S47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="T65S47Desc"/>
+			<media id="T66S48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="T66S48Desc"/>
+			<media id="T67S49" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide49.png" descriptor="T67S49Desc"/>
+			<media id="T68S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="T68S50Desc"/>
+			<media id="T69S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="T69S51Desc"/>
+			<media id="T70S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="T70S50Desc"/>
+			<media id="T71S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="T71S51Desc"/>
+			<media id="T72S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="T72S52Desc"/>
+			<media id="T73S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="T73S53Desc"/>
+			<media id="T74S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="T74S52Desc"/>
+			<media id="T75S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="T75S51Desc"/>
+			<media id="T76S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="T76S50Desc"/>
+			<media id="T77S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="T77S52Desc"/>
+			<media id="T78S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="T78S53Desc"/>
+			<media id="T79S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="T79S51Desc"/>
+			<media id="T80S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="T80S52Desc"/>
+			<media id="T81S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="T81S53Desc"/>
+			<media id="T82S54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="T82S54Desc"/>
+			<media id="T83S55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="T83S55Desc"/>
+			<media id="T84S54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="T84S54Desc"/>
+			<media id="T85S55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="T85S55Desc"/>
+			<media id="T86S56" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide56.png" descriptor="T86S56Desc"/>
+			<media id="T87S57" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide57.png" descriptor="T87S57Desc"/>
+			<media id="T88S58" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide58.png" descriptor="T88S58Desc"/>
+			<media id="T89S59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="T89S59Desc"/>
+			<media id="T90S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="T90S60Desc"/>
+			<media id="T91S59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="T91S59Desc"/>
+			<media id="T92S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="T92S60Desc"/>
+			<media id="T93S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="T93S61Desc"/>
+			<media id="T94S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="T94S60Desc"/>
+			<media id="T95S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="T95S61Desc"/>
+			<media id="T96S62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="T96S62Desc"/>
+			<media id="T97S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="T97S61Desc"/>
+			<media id="T98S62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="T98S62Desc"/>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T1S1"/>
+				<bind role="start" component="T2S2"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T2S2"/>
+				<bind role="start" component="T3S3"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T3S3"/>
+				<bind role="start" component="T4S4"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T4S4"/>
+				<bind role="start" component="T5S5"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T5S5"/>
+				<bind role="start" component="T6S6"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T6S6"/>
+				<bind role="start" component="T7S7"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T7S7"/>
+				<bind role="start" component="T8S8"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T8S8"/>
+				<bind role="start" component="T9S9"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T9S9"/>
+				<bind role="start" component="T10S10"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T10S10"/>
+				<bind role="start" component="T11S11"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T11S11"/>
+				<bind role="start" component="T12S12"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T12S12"/>
+				<bind role="start" component="T13S13"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T13S13"/>
+				<bind role="start" component="T14S14"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T14S14"/>
+				<bind role="start" component="T15S15"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T15S15"/>
+				<bind role="start" component="T16S16"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T16S16"/>
+				<bind role="start" component="T17S17"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T17S17"/>
+				<bind role="start" component="T18S18"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T18S18"/>
+				<bind role="start" component="T19S19"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T19S19"/>
+				<bind role="start" component="T20S20"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T20S20"/>
+				<bind role="start" component="T21S21"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T21S21"/>
+				<bind role="start" component="T22S22"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T22S22"/>
+				<bind role="start" component="T23S23"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T23S23"/>
+				<bind role="start" component="T24S24"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T24S24"/>
+				<bind role="start" component="T25S25"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T25S25"/>
+				<bind role="start" component="T26S26"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T26S26"/>
+				<bind role="start" component="T27S27"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T27S27"/>
+				<bind role="start" component="T28S28"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T28S28"/>
+				<bind role="start" component="T29S29"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T29S29"/>
+				<bind role="start" component="T30S30"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T30S30"/>
+				<bind role="start" component="T31S31"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T31S31"/>
+				<bind role="start" component="T32S32"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T32S32"/>
+				<bind role="start" component="T33S33"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T33S33"/>
+				<bind role="start" component="T34S34"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T34S34"/>
+				<bind role="start" component="T35S35"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T35S35"/>
+				<bind role="start" component="T36S36"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T36S36"/>
+				<bind role="start" component="T37S35"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T37S35"/>
+				<bind role="start" component="T38S37"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T38S37"/>
+				<bind role="start" component="T39S38"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T39S38"/>
+				<bind role="start" component="T40S39"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T40S39"/>
+				<bind role="start" component="T41S40"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T41S40"/>
+				<bind role="start" component="T42S41"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T42S41"/>
+				<bind role="start" component="T43S40"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T43S40"/>
+				<bind role="start" component="T44S41"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T44S41"/>
+				<bind role="start" component="T45S42"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T45S42"/>
+				<bind role="start" component="T46S43"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T46S43"/>
+				<bind role="start" component="T47S44"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T47S44"/>
+				<bind role="start" component="T48S43"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T48S43"/>
+				<bind role="start" component="T49S44"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T49S44"/>
+				<bind role="start" component="T50S45"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T50S45"/>
+				<bind role="start" component="T51S44"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T51S44"/>
+				<bind role="start" component="T52S42"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T52S42"/>
+				<bind role="start" component="T53S40"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T53S40"/>
+				<bind role="start" component="T54S38"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T54S38"/>
+				<bind role="start" component="T55S39"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T55S39"/>
+				<bind role="start" component="T56S40"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T56S40"/>
+				<bind role="start" component="T57S41"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T57S41"/>
+				<bind role="start" component="T58S43"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T58S43"/>
+				<bind role="start" component="T59S45"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T59S45"/>
+				<bind role="start" component="T60S46"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T60S46"/>
+				<bind role="start" component="T61S45"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T61S45"/>
+				<bind role="start" component="T62S46"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T62S46"/>
+				<bind role="start" component="T63S47"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T63S47"/>
+				<bind role="start" component="T64S48"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T64S48"/>
+				<bind role="start" component="T65S47"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T65S47"/>
+				<bind role="start" component="T66S48"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T66S48"/>
+				<bind role="start" component="T67S49"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T67S49"/>
+				<bind role="start" component="T68S50"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T68S50"/>
+				<bind role="start" component="T69S51"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T69S51"/>
+				<bind role="start" component="T70S50"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T70S50"/>
+				<bind role="start" component="T71S51"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T71S51"/>
+				<bind role="start" component="T72S52"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T72S52"/>
+				<bind role="start" component="T73S53"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T73S53"/>
+				<bind role="start" component="T74S52"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T74S52"/>
+				<bind role="start" component="T75S51"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T75S51"/>
+				<bind role="start" component="T76S50"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T76S50"/>
+				<bind role="start" component="T77S52"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T77S52"/>
+				<bind role="start" component="T78S53"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T78S53"/>
+				<bind role="start" component="T79S51"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T79S51"/>
+				<bind role="start" component="T80S52"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T80S52"/>
+				<bind role="start" component="T81S53"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T81S53"/>
+				<bind role="start" component="T82S54"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T82S54"/>
+				<bind role="start" component="T83S55"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T83S55"/>
+				<bind role="start" component="T84S54"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T84S54"/>
+				<bind role="start" component="T85S55"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T85S55"/>
+				<bind role="start" component="T86S56"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T86S56"/>
+				<bind role="start" component="T87S57"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T87S57"/>
+				<bind role="start" component="T88S58"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T88S58"/>
+				<bind role="start" component="T89S59"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T89S59"/>
+				<bind role="start" component="T90S60"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T90S60"/>
+				<bind role="start" component="T91S59"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T91S59"/>
+				<bind role="start" component="T92S60"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T92S60"/>
+				<bind role="start" component="T93S61"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T93S61"/>
+				<bind role="start" component="T94S60"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T94S60"/>
+				<bind role="start" component="T95S61"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T95S61"/>
+				<bind role="start" component="T96S62"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T96S62"/>
+				<bind role="start" component="T97S61"/>
+			</link>
+			<link xconnector="conn#onEndStart">
+				<bind role="onEnd" component="T97S61"/>
+				<bind role="start" component="T98S62"/>
+			</link>
+		</context>
+		<context id="SlideMenu">
+			<port id="S1P" component="S1"/>
+			<port id="S2P" component="S2"/>
+			<port id="S3P" component="S3"/>
+			<port id="S4P" component="S4"/>
+			<port id="S5P" component="S5"/>
+			<port id="S6P" component="S6"/>
+			<port id="S7P" component="S7"/>
+			<port id="S8P" component="S8"/>
+			<port id="S9P" component="S9"/>
+			<port id="S10P" component="S10"/>
+			<port id="S11P" component="S11"/>
+			<port id="S12P" component="S12"/>
+			<port id="S13P" component="S13"/>
+			<port id="S14P" component="S14"/>
+			<media id="S1" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="M1Desc"/>
+			<media id="S2" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide2.png" descriptor="M2Desc"/>
+			<media id="S3" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide3.png" descriptor="M3Desc"/>
+			<media id="S4" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide4.png" descriptor="M4Desc"/>
+			<media id="S5" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide5.png" descriptor="M5Desc"/>
+			<media id="S6" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide6.png" descriptor="M6Desc"/>
+			<media id="S7" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide7.png" descriptor="M7Desc"/>
+			<media id="S8" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide8.png" descriptor="M8Desc"/>
+			<media id="S9" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide9.png" descriptor="M9Desc"/>
+			<media id="S10" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide10.png" descriptor="M10Desc"/>
+			<media id="S11" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide11.png" descriptor="M11Desc"/>
+			<media id="S12" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide12.png" descriptor="M12Desc"/>
+			<media id="S13" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide13.png" descriptor="M13Desc"/>
+			<media id="S14" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="M14Desc"/>
+		</context>
+		<link xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="S1P"/>
+			<bind role="stop" component="Video"/>
+			<bind role="stop" component="Slides"/>
+			<bind role="start" component="Video"/>
+			<bind role="start" component="Slides" interface="T1S1Port"/>
+		</link>
+		<link xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="S2P"/>
+			<bind role="stop" component="Video"/>
+			<bind role="stop" component="Slides"/>
+			<bind role="start" component="Video" interface="AT2S2"/>
+			<bind role="start" component="Slides" interface="T2S2Port"/>
+		</link>
+		<link xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="S3P"/>
+			<bind role="stop" component="Video"/>
+			<bind role="stop" component="Slides"/>
+			<bind role="start" component="Video" interface="AT3S3"/>
+			<bind role="start" component="Slides" interface="T3S3Port"/>
+		</link>
+		<link xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="S4P"/>
+			<bind role="stop" component="Video"/>
+			<bind role="stop" component="Slides"/>
+			<bind role="start" component="Video" interface="AT4S4"/>
+			<bind role="start" component="Slides" interface="T4S4Port"/>
+		</link>
+		<!--medias settings-->
+		<media id="sett" type="application/x-ncl-settings">
+			<property name="service.currentFocus"/>
+			<property name="prev" value="7" />
+		</media>
+		<context id="D">
+			<port id="PMD7" component="MD7"/>
+			<port id="PMD8" component="MD8"/>
+			<media id="MD7" descriptor="D7"/>
+			<media id="MD8" descriptor="D8"/>
+		</context>
+		<link id="link0" xconnector="onEndFocusTestStopStart">
+			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="stop" component="D"/>
+			<bind role="start" component="SlideMenu" interface="S8P"/>
+			<bind role="start" component="SlideMenu" interface="S9P"/>
+			<bind role="start" component="SlideMenu" interface="S10P"/>
+			<bind role="start" component="SlideMenu" interface="S11P"/>
+			<bind role="start" component="SlideMenu" interface="S12P"/>
+			<bind role="start" component="SlideMenu" interface="S13P"/>
+			<bind role="start" component="SlideMenu" interface="S14P"/>
+			<bind role="start" component="D" interface="PMD7"/>
+			<bind role="onFocus" component="sett" interface="service.currentFocus">
+				<bindParam name="val" value="8"/>
+			</bind>
+			<bind role="previus" component="sett" interface="prev">
+				<bindParam name="val" value="7"/>
+			</bind>
+		</link>
+		<link xconnector="onEndFocusTestStopStart">
+			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="stop" component="D"/>
+			<bind role="start" component="SlideMenu" interface="S1P"/>
+			<bind role="start" component="SlideMenu" interface="S2P"/>
+			<bind role="start" component="SlideMenu" interface="S3P"/>
+			<bind role="start" component="SlideMenu" interface="S4P"/>
+			<bind role="start" component="SlideMenu" interface="S5P"/>
+			<bind role="start" component="SlideMenu" interface="S6P"/>
+			<bind role="start" component="SlideMenu" interface="S7P"/>
+			<bind role="start" component="D" interface="PMD8"/>
+			<bind role="onFocus" component="sett" interface="service.currentFocus">
+				<bindParam name="val" value="7"/>
+			</bind>
+		</link>
+	</body>
+</ncl>
