@@ -21,6 +21,7 @@
 		</regionBase>
 		<!--descriptorBase-->
 		<descriptorBase id="descriptorBase">
+		<descriptor id="dummy" region="region4" focusIndex="8" />
 			<descriptor id="VideoDesc" region="region1"/>
 			<descriptor id="SlideMenuDesc" region="region3"/>
 			<descriptor id="M1Desc" region="region4" focusIndex="1" moveRight="2"/>
@@ -178,6 +179,17 @@
 	</head>
 	<body>
 		<port id="Begin" component="Video"/>
+		<link xconnector="conn#onBeginStart">
+			<bind role="onBegin" component="Video"/>
+			<bind role="start" component="yay"/>
+		</link>
+		<link xconnector="conn#onBeginSet_var">
+			<bind role="onBegin" component="Video"/>
+			<bind role="set" component="sett" interface="service.currentFocus">
+				<bindParam name="var" value="1"/>
+			</bind>
+		</link>
+		<media id="yay" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="dummy"/>
 		<media id="Video" src="raw/video/192.168.108.1(projeto-cas)/videoSCV01375449316875.mp4" descriptor="VideoDesc">
 			<area id="AT2S2" begin="38.39800000190735s"/>
 			<area id="AT3S3" begin="52.58999991416931s"/>
@@ -957,13 +969,13 @@
 		<link xconnector="onEndFocusTestStopStart">
 			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
 			<bind role="stop" component="SlideMenu"/>
-			<bind role="start" component="SlideMenu" interface="S1P"/>
-			<bind role="start" component="SlideMenu" interface="S2P"/>
-			<bind role="start" component="SlideMenu" interface="S3P"/>
-			<bind role="start" component="SlideMenu" interface="S4P"/>
-			<bind role="start" component="SlideMenu" interface="S5P"/>
-			<bind role="start" component="SlideMenu" interface="S6P"/>
-			<bind role="start" component="SlideMenu" interface="S7P"/>
+			<bind role="start" component="SlideMenu" interface="S8P"/>
+			<bind role="start" component="SlideMenu" interface="S9P"/>
+			<bind role="start" component="SlideMenu" interface="S10P"/>
+			<bind role="start" component="SlideMenu" interface="S11P"/>
+			<bind role="start" component="SlideMenu" interface="S12P"/>
+			<bind role="start" component="SlideMenu" interface="S13P"/>
+			<bind role="start" component="SlideMenu" interface="S14P"/>
 			<bind role="onFocus" component="sett" interface="service.currentFocus">
 				<bindParam name="val" value="8"/>
 			</bind>
