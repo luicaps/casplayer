@@ -149,7 +149,7 @@
 			<causalConnector id="onEndFocusTestStopStart">
 				<connectorParam name="val"/>
 				<connectorParam name="val1"/>
-				<connectorParam name="val2"/>
+				<!--<connectorParam name="val2"/>-->
 				<compoundCondition operator="and">
 					<simpleCondition max="unbounded" role="onEndAttribution"/>
 					<assessmentStatement comparator="eq">
@@ -157,9 +157,9 @@
 						<valueAssessment value="$val"/>
 					</assessmentStatement>
 					<assessmentStatement comparator="eq">
-						<!--<attributeAssessment role="previous" eventType="attribution" attributeType="nodeProperty"/>-->
+						<attributeAssessment role="previous" eventType="attribution" attributeType="nodeProperty"/>
 						<valueAssessment value="$val1"/>
-						<valueAssessment value="$val2"/>
+						<!--<valueAssessment value="$val2"/>-->
 					</assessmentStatement>
 				</compoundCondition>
 				<compoundAction operator="seq">
@@ -937,7 +937,7 @@
 			<property name="service.currentFocus"/>
 			<property name="prev" value="7"/>
 		</media>
-		<link id="link0" xconnector="onEndFocusTestStopStart">
+		<!--<link id="link0" xconnector="onEndFocusTestStopStart">
 			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
 			<bind role="stop" component="SlideMenu"/>
 			<bind role="start" component="SlideMenu" interface="S8P"/>
@@ -953,7 +953,7 @@
 			<bind role="previous" component="sett" interface="prev">
 				<bindParam name="val" value="7"/>
 			</bind>
-		</link>
+		</link>-->
 		<link xconnector="onEndFocusTestStopStart">
 			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
 			<bind role="stop" component="SlideMenu"/>
@@ -965,11 +965,12 @@
 			<bind role="start" component="SlideMenu" interface="S6P"/>
 			<bind role="start" component="SlideMenu" interface="S7P"/>
 			<bind role="onFocus" component="sett" interface="service.currentFocus">
-				<bindParam name="val" value="7"/>
+				<bindParam name="val" value="8"/>
 			</bind>
 			<bind role="get" component="sett" interface="prev" />
-			<linkParam name="val1" value="7"/>
-			<linkParam name="val2" value="$get"/>
+			<bind role="previous" component="sett" interface="prev">
+				<bindParam name="val1" value="7"/>
+			</bind>
 		</link>
 		<link xconnector="onBeginAttributionSetVar">
 			<bind role="onBeginAttribution" component="sett" interface="service.currentFocus" />
