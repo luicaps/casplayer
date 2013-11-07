@@ -5,23 +5,23 @@
 		<!--regionBase-->
 		<regionBase id="regionBase">
 			<region id="RD" top="0%" left="0%" width="2%" height="2%" zIndex="0"/>
-			<region height="100.00%" id="region0" left="0.00%" top="0.00%" width="100.00%" zIndex="1">
-				<region height="80%" id="region1" left="0.00%" top="0.00%" width="50%" zIndex="2"/>
-				<region height="80%" id="region2" left="50.00%" top="0.00%" width="50.00%" zIndex="3"/>
-				<region height="20.00%" id="region3" left="0.00%" top="80.00%" width="100.00%" zIndex="4">
-					<region height="90.00%" id="region4" left="1%" top="4.17%" width="13.00%" zIndex="5"/>
+			<region height="100%" id="region0" left="0%" top="0%" width="100%" zIndex="1">
+				<region height="80%" id="region1" left="0%" top="0%" width="50%" zIndex="2"/>
+				<region height="80%" id="region2" left="50%" top="0%" width="50%" zIndex="3"/>
+				<region height="20%" id="region3" left="0%" top="80%" width="100%" zIndex="4">
+					<region height="90%" id="region4" left="1%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region5" left="15%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region6" left="29%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region7" left="43%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region8" left="57%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region9" left="71%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region10" left="85%" top="5.5%" width="13%" zIndex="5"/>
+					<region id="region11" zIndex="6" top="99.9%"/>
 				</region>
 			</region>
 		</regionBase>
 		<!--descriptorBase-->
 		<descriptorBase id="descriptorBase">
-		<descriptor id="dummy" region="region4" focusIndex="8" />
 			<descriptor id="VideoDesc" region="region1"/>
 			<descriptor id="SlideMenuDesc" region="region3"/>
 			<descriptor id="M1Desc" region="region4" focusIndex="1" moveRight="2"/>
@@ -31,15 +31,14 @@
 			<descriptor id="M5Desc" region="region8" focusIndex="5" moveRight="6" moveLeft="4"/>
 			<descriptor id="M6Desc" region="region9" focusIndex="6" moveRight="7" moveLeft="5"/>
 			<descriptor id="M7Desc" region="region10" focusIndex="7" moveRight="8" moveLeft="6"/>
-			<descriptor id="D7" region="RD" focusIndex="7" moveLeft="6" moveRight="8"/>
-			<descriptor id="D8" region="RD" focusIndex="8" moveLeft="7" moveRight="9"/>
-			<descriptor id="M8Desc" region="region4" focusIndex="8" moveRight="9"/>
-			<descriptor id="M9Desc" region="region5" focusIndex="9" moveRight="10" moveLeft="8"/>
-			<descriptor id="M10Desc" region="region6" focusIndex="10" moveRight="11" moveLeft="9"/>
-			<descriptor id="M11Desc" region="region7" focusIndex="11" moveRight="12" moveLeft="10"/>
-			<descriptor id="M12Desc" region="region8" focusIndex="12" moveRight="13" moveLeft="11"/>
-			<descriptor id="M13Desc" region="region9" focusIndex="13" moveRight="14" moveLeft="12"/>
-			<descriptor id="M14Desc" region="region10" focusIndex="14" moveLeft="13"/>
+			<descriptor id="oculto" region="region11" focusIndex="8" />
+			<descriptor id="M8Desc" region="region4" focusIndex="9" moveRight="10" moveLeft="8"/>
+			<descriptor id="M9Desc" region="region5" focusIndex="10" moveRight="11" moveLeft="9"/>
+			<descriptor id="M10Desc" region="region6" focusIndex="11" moveRight="12" moveLeft="10"/>
+			<descriptor id="M11Desc" region="region7" focusIndex="12" moveRight="13" moveLeft="11"/>
+			<descriptor id="M12Desc" region="region8" focusIndex="13" moveRight="14" moveLeft="12"/>
+			<descriptor id="M13Desc" region="region9" focusIndex="14" moveRight="15" moveLeft="13"/>
+			<descriptor id="M14Desc" region="region10" focusIndex="15" moveLeft="14"/>
 			<descriptor id="T1S1Desc" region="region2" explicitDur="38.39800000190735s"/>
 			<descriptor id="T2S2Desc" region="region2" explicitDur="14.191999912261963s"/>
 			<descriptor id="T3S3Desc" region="region2" explicitDur="99.72399997711182s"/>
@@ -147,10 +146,10 @@
           		<simpleCondition role="onBeginAttribution"/>
           		<simpleAction role="set" value="$var"/>
 			</causalConnector>
-			<causalConnector id="onEndFocusTestStopStart">
+			<causalConnector id="onEndFocusTestStopStartSet_var">
 				<connectorParam name="val"/>
 				<connectorParam name="val1"/>
-				<!--<connectorParam name="val2"/>-->
+				<connectorParam name="val2"/>
 				<compoundCondition operator="and">
 					<simpleCondition max="unbounded" role="onEndAttribution"/>
 					<assessmentStatement comparator="eq">
@@ -160,12 +159,12 @@
 					<assessmentStatement comparator="eq">
 						<attributeAssessment role="previous" eventType="attribution" attributeType="nodeProperty"/>
 						<valueAssessment value="$val1"/>
-						<!--<valueAssessment value="$val2"/>-->
 					</assessmentStatement>
 				</compoundCondition>
 				<compoundAction operator="seq">
 					<simpleAction max="unbounded" role="stop"/>
 					<simpleAction max="unbounded" role="start"/>
+					<simpleAction role="set" value="$val2"/>
 				</compoundAction>
 			</causalConnector>
 			<causalConnector id="onSelectionStopStart">
@@ -179,17 +178,7 @@
 	</head>
 	<body>
 		<port id="Begin" component="Video"/>
-		<link xconnector="conn#onBeginStart">
-			<bind role="onBegin" component="Video"/>
-			<bind role="start" component="yay"/>
-		</link>
-		<link xconnector="conn#onBeginSet_var">
-			<bind role="onBegin" component="Video"/>
-			<bind role="set" component="sett" interface="service.currentFocus">
-				<bindParam name="var" value="1"/>
-			</bind>
-		</link>
-		<media id="yay" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="dummy"/>
+		<media id="i" src="raw/i.png" descriptor="oculto"/>
 		<media id="Video" src="raw/video/192.168.108.1(projeto-cas)/videoSCV01375449316875.mp4" descriptor="VideoDesc">
 			<area id="AT2S2" begin="38.39800000190735s"/>
 			<area id="AT3S3" begin="52.58999991416931s"/>
@@ -299,6 +288,7 @@
 			<bind role="start" component="SlideMenu" interface="S5P"/>
 			<bind role="start" component="SlideMenu" interface="S6P"/>
 			<bind role="start" component="SlideMenu" interface="S7P"/>
+			<bind role="start" component="i" />
 		</link>
 		<context id="Slides">
 			<port id="T1S1Port" component="T1S1"/>
@@ -949,7 +939,7 @@
 			<property name="service.currentFocus"/>
 			<property name="prev" value="7"/>
 		</media>
-		<!--<link id="link0" xconnector="onEndFocusTestStopStart">
+		<link xconnector="onEndFocusTestStopStartSet_var">
 			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
 			<bind role="stop" component="SlideMenu"/>
 			<bind role="start" component="SlideMenu" interface="S8P"/>
@@ -963,25 +953,31 @@
 				<bindParam name="val" value="8"/>
 			</bind>
 			<bind role="previous" component="sett" interface="prev">
-				<bindParam name="val" value="7"/>
+				<bindParam name="val1" value="7"/>
 			</bind>
-		</link>-->
-		<link xconnector="onEndFocusTestStopStart">
+			<bind role="set" component="sett" interface="service.currentFocus">
+				<bindParam name="val2" value="9"/>
+			</bind>
+		</link>
+		<link xconnector="onEndFocusTestStopStartSet_var">
 			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
 			<bind role="stop" component="SlideMenu"/>
-			<bind role="start" component="SlideMenu" interface="S8P"/>
-			<bind role="start" component="SlideMenu" interface="S9P"/>
-			<bind role="start" component="SlideMenu" interface="S10P"/>
-			<bind role="start" component="SlideMenu" interface="S11P"/>
-			<bind role="start" component="SlideMenu" interface="S12P"/>
-			<bind role="start" component="SlideMenu" interface="S13P"/>
-			<bind role="start" component="SlideMenu" interface="S14P"/>
+			<bind role="start" component="SlideMenu" interface="S1P"/>
+			<bind role="start" component="SlideMenu" interface="S2P"/>
+			<bind role="start" component="SlideMenu" interface="S3P"/>
+			<bind role="start" component="SlideMenu" interface="S4P"/>
+			<bind role="start" component="SlideMenu" interface="S5P"/>
+			<bind role="start" component="SlideMenu" interface="S6P"/>
+			<bind role="start" component="SlideMenu" interface="S7P"/>
 			<bind role="onFocus" component="sett" interface="service.currentFocus">
 				<bindParam name="val" value="8"/>
 			</bind>
 			<bind role="get" component="sett" interface="prev" />
 			<bind role="previous" component="sett" interface="prev">
-				<bindParam name="val1" value="7"/>
+				<bindParam name="val1" value="9"/>
+			</bind>
+			<bind role="set" component="sett" interface="service.currentFocus">
+				<bindParam name="val2" value="7"/>
 			</bind>
 		</link>
 		<link xconnector="onBeginAttributionSetVar">
