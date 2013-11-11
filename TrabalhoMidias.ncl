@@ -178,7 +178,6 @@
 	</head>
 	<body>
 		<port id="Begin" component="Video"/>
-		<media id="i" src="raw/i.png" descriptor="oculto"/>
 		<media id="Video" src="raw/video/192.168.108.1(projeto-cas)/videoSCV01375449316875.mp4" descriptor="VideoDesc">
 			<area id="AT2S2" begin="38.39800000190735s"/>
 			<area id="AT3S3" begin="52.58999991416931s"/>
@@ -288,7 +287,7 @@
 			<bind role="start" component="SlideMenu" interface="S5P"/>
 			<bind role="start" component="SlideMenu" interface="S6P"/>
 			<bind role="start" component="SlideMenu" interface="S7P"/>
-			<bind role="start" component="i" />
+			<bind role="start" component="D" interface="PMD8"/>
 		</link>
 		<context id="Slides">
 			<port id="T1S1Port" component="T1S1"/>
