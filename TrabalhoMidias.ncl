@@ -4,7 +4,7 @@
 	<head>
 		<!--regionBase-->
 		<regionBase id="regionBase">
-			<region id="RD" top="0%" left="0%" width="2%" height="2%" zIndex="0"/>
+<!--		<region id="RD" top="0%" left="0%" width="2%" height="2%" zIndex="0"/> -->
 			<region height="100%" id="region0" left="0%" top="0%" width="100%" zIndex="1">
 				<region height="80%" id="region1" left="0%" top="0%" width="50%" zIndex="2"/>
 				<region height="80%" id="region2" left="50%" top="0%" width="50%" zIndex="3"/>
@@ -16,7 +16,7 @@
 					<region height="90%" id="region8" left="57%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region9" left="71%" top="5.5%" width="13%" zIndex="5"/>
 					<region height="90%" id="region10" left="85%" top="5.5%" width="13%" zIndex="5"/>
-					<region id="region11" zIndex="6" top="99.9%"/>
+<!--				<region id="region11" zIndex="6" top="99.9%"/> -->
 				</region>
 			</region>
 		</regionBase>
@@ -24,118 +24,13 @@
 		<descriptorBase id="descriptorBase">
 			<descriptor id="VideoDesc" region="region1"/>
 			<descriptor id="SlideMenuDesc" region="region3"/>
-			<descriptor id="M1Desc" region="region4" focusIndex="1" moveRight="2"/>
-			<descriptor id="M2Desc" region="region5" focusIndex="2" moveRight="3" moveLeft="1"/>
-			<descriptor id="M3Desc" region="region6" focusIndex="3" moveRight="4" moveLeft="2"/>
-			<descriptor id="M4Desc" region="region7" focusIndex="4" moveRight="5" moveLeft="3"/>
-			<descriptor id="M5Desc" region="region8" focusIndex="5" moveRight="6" moveLeft="4"/>
-			<descriptor id="M6Desc" region="region9" focusIndex="6" moveRight="7" moveLeft="5"/>
-			<descriptor id="M7Desc" region="region10" focusIndex="7" moveRight="8" moveLeft="6"/>
-			<descriptor id="Ocult8" region="region11" focusIndex="8" moveRight="9"/>
-			<descriptor id="M8Desc" region="region4" focusIndex="9" moveRight="10"/>
-			<descriptor id="M9Desc" region="region5" focusIndex="10" moveRight="11" moveLeft="9"/>
-			<descriptor id="M10Desc" region="region6" focusIndex="11" moveRight="12" moveLeft="10"/>
-			<descriptor id="M11Desc" region="region7" focusIndex="12" moveRight="13" moveLeft="11"/>
-			<descriptor id="M12Desc" region="region8" focusIndex="13" moveRight="14" moveLeft="12"/>
-			<descriptor id="M13Desc" region="region9" focusIndex="14" moveRight="15" moveLeft="13"/>
-			<descriptor id="M14Desc" region="region10" focusIndex="15" moveRight="16" moveLeft="14"/>
-			<descriptor id="Ocult15" region="region11" focusIndex="16"/>
-			<descriptor id="M15Desc" region="region4" focusIndex="17" moveRight="18"/>
-			<descriptor id="M16Desc" region="region5" focusIndex="18" moveRight="19" moveLeft="17"/>
-			<descriptor id="M17Desc" region="region6" focusIndex="19" moveRight="20" moveLeft="18"/>
-			<descriptor id="M18Desc" region="region7" focusIndex="20" moveRight="21" moveLeft="19"/>
-			<descriptor id="M19Desc" region="region8" focusIndex="21" moveRight="22" moveLeft="20"/>
-			<descriptor id="M20Desc" region="region9" focusIndex="22" moveRight="23" moveLeft="21"/>
-			<descriptor id="M21Desc" region="region10" focusIndex="23" moveRight="24" moveLeft="22"/>
-			<descriptor id="Ocult22" region="region11" focusIndex="24"/>
-			<descriptor id="M22Desc" region="region4" focusIndex="25" moveRight="26"/>
-			<descriptor id="M23Desc" region="region5" focusIndex="26" moveRight="27" moveLeft="25"/>
-			<descriptor id="M24Desc" region="region6" focusIndex="27" moveRight="28" moveLeft="26"/>
-			<descriptor id="M25Desc" region="region7" focusIndex="28" moveRight="29" moveLeft="27"/>
-			<descriptor id="M26Desc" region="region8" focusIndex="29" moveRight="30" moveLeft="28"/>
-			<descriptor id="M27Desc" region="region9" focusIndex="30" moveRight="31" moveLeft="29"/>
-			<descriptor id="M28Desc" region="region10" focusIndex="31" moveRight="32" moveLeft="30"/>
-			<descriptor id="Ocult29" region="region11" focusIndex="32"/>
-			<descriptor id="M29Desc" region="region4" focusIndex="33" moveRight="34"/>
-			<descriptor id="M30Desc" region="region5" focusIndex="34" moveRight="35" moveLeft="33"/>
-			<descriptor id="M31Desc" region="region6" focusIndex="35" moveRight="36" moveLeft="34"/>
-			<descriptor id="M32Desc" region="region7" focusIndex="36" moveRight="37" moveLeft="35"/>
-			<descriptor id="M33Desc" region="region8" focusIndex="37" moveRight="38" moveLeft="36"/>
-			<descriptor id="M34Desc" region="region9" focusIndex="38" moveRight="39" moveLeft="37"/>
-			<descriptor id="M35Desc" region="region10" focusIndex="39" moveRight="40" moveLeft="38"/>
-			<descriptor id="Ocult36" region="region11" focusIndex="40"/>
-			<descriptor id="M36Desc" region="region4" focusIndex="41" moveRight="42"/>
-			<descriptor id="M37Desc" region="region5" focusIndex="42" moveRight="43" moveLeft="41"/>
-			<descriptor id="M38Desc" region="region6" focusIndex="43" moveRight="44" moveLeft="42"/>
-			<descriptor id="M39Desc" region="region7" focusIndex="44" moveRight="45" moveLeft="43"/>
-			<descriptor id="M40Desc" region="region8" focusIndex="45" moveRight="46" moveLeft="44"/>
-			<descriptor id="M41Desc" region="region9" focusIndex="46" moveRight="47" moveLeft="45"/>
-			<descriptor id="M42Desc" region="region10" focusIndex="47" moveRight="48" moveLeft="46"/>
-			<descriptor id="Ocult43" region="region11" focusIndex="48"/>
-			<descriptor id="M43Desc" region="region4" focusIndex="49" moveRight="50"/>
-			<descriptor id="M44Desc" region="region5" focusIndex="50" moveRight="51" moveLeft="49"/>
-			<descriptor id="M45Desc" region="region6" focusIndex="51" moveRight="52" moveLeft="50"/>
-			<descriptor id="M46Desc" region="region7" focusIndex="52" moveRight="53" moveLeft="51"/>
-			<descriptor id="M47Desc" region="region8" focusIndex="53" moveRight="54" moveLeft="52"/>
-			<descriptor id="M48Desc" region="region9" focusIndex="54" moveRight="55" moveLeft="53"/>
-			<descriptor id="M49Desc" region="region10" focusIndex="55" moveRight="56" moveLeft="54"/>
-			<descriptor id="Ocult50" region="region11" focusIndex="56"/>
-			<descriptor id="M50Desc" region="region4" focusIndex="57" moveRight="58"/>
-			<descriptor id="M51Desc" region="region5" focusIndex="58" moveRight="59" moveLeft="57"/>
-			<descriptor id="M52Desc" region="region6" focusIndex="59" moveRight="60" moveLeft="58"/>
-			<descriptor id="M53Desc" region="region7" focusIndex="60" moveRight="61" moveLeft="59"/>
-			<descriptor id="M54Desc" region="region8" focusIndex="61" moveRight="62" moveLeft="60"/>
-			<descriptor id="M55Desc" region="region9" focusIndex="62" moveRight="63" moveLeft="61"/>
-			<descriptor id="M56Desc" region="region10" focusIndex="63" moveRight="64" moveLeft="62"/>
-			<descriptor id="Ocult57" region="region11" focusIndex="64"/>
-			<descriptor id="M57Desc" region="region4" focusIndex="65" moveRight="66"/>
-			<descriptor id="M58Desc" region="region5" focusIndex="66" moveRight="67" moveLeft="65"/>
-			<descriptor id="M59Desc" region="region6" focusIndex="67" moveRight="68" moveLeft="66"/>
-			<descriptor id="M60Desc" region="region7" focusIndex="68" moveRight="69" moveLeft="67"/>
-			<descriptor id="M61Desc" region="region8" focusIndex="69" moveRight="70" moveLeft="68"/>
-			<descriptor id="M62Desc" region="region9" focusIndex="70" moveRight="71" moveLeft="69"/>
-			<descriptor id="M63Desc" region="region10" focusIndex="71" moveRight="72" moveLeft="70"/>
-			<descriptor id="Ocult64" region="region11" focusIndex="72"/>
-			<descriptor id="M64Desc" region="region4" focusIndex="73" moveRight="74"/>
-			<descriptor id="M65Desc" region="region5" focusIndex="74" moveRight="75" moveLeft="73"/>
-			<descriptor id="M66Desc" region="region6" focusIndex="75" moveRight="76" moveLeft="74"/>
-			<descriptor id="M67Desc" region="region7" focusIndex="76" moveRight="77" moveLeft="75"/>
-			<descriptor id="M68Desc" region="region8" focusIndex="77" moveRight="78" moveLeft="76"/>
-			<descriptor id="M69Desc" region="region9" focusIndex="78" moveRight="79" moveLeft="77"/>
-			<descriptor id="M70Desc" region="region10" focusIndex="79" moveRight="80" moveLeft="78"/>
-			<descriptor id="Ocult71" region="region11" focusIndex="80"/>
-			<descriptor id="M71Desc" region="region4" focusIndex="81" moveRight="82"/>
-			<descriptor id="M72Desc" region="region5" focusIndex="82" moveRight="83" moveLeft="81"/>
-			<descriptor id="M73Desc" region="region6" focusIndex="83" moveRight="84" moveLeft="82"/>
-			<descriptor id="M74Desc" region="region7" focusIndex="84" moveRight="85" moveLeft="83"/>
-			<descriptor id="M75Desc" region="region8" focusIndex="85" moveRight="86" moveLeft="84"/>
-			<descriptor id="M76Desc" region="region9" focusIndex="86" moveRight="87" moveLeft="85"/>
-			<descriptor id="M77Desc" region="region10" focusIndex="87" moveRight="88" moveLeft="86"/>
-			<descriptor id="Ocult78" region="region11" focusIndex="88"/>
-			<descriptor id="M78Desc" region="region4" focusIndex="89" moveRight="90"/>
-			<descriptor id="M79Desc" region="region5" focusIndex="90" moveRight="91" moveLeft="89"/>
-			<descriptor id="M80Desc" region="region6" focusIndex="91" moveRight="92" moveLeft="90"/>
-			<descriptor id="M81Desc" region="region7" focusIndex="92" moveRight="93" moveLeft="91"/>
-			<descriptor id="M82Desc" region="region8" focusIndex="93" moveRight="94" moveLeft="92"/>
-			<descriptor id="M83Desc" region="region9" focusIndex="94" moveRight="95" moveLeft="93"/>
-			<descriptor id="M84Desc" region="region10" focusIndex="95" moveRight="96" moveLeft="94"/>
-			<descriptor id="Ocult85" region="region11" focusIndex="96"/>
-			<descriptor id="M85Desc" region="region4" focusIndex="97" moveRight="98"/>
-			<descriptor id="M86Desc" region="region5" focusIndex="98" moveRight="99" moveLeft="97"/>
-			<descriptor id="M87Desc" region="region6" focusIndex="99" moveRight="100" moveLeft="98"/>
-			<descriptor id="M88Desc" region="region7" focusIndex="100" moveRight="101" moveLeft="99"/>
-			<descriptor id="M89Desc" region="region8" focusIndex="101" moveRight="102" moveLeft="100"/>
-			<descriptor id="M90Desc" region="region9" focusIndex="102" moveRight="103" moveLeft="101"/>
-			<descriptor id="M91Desc" region="region10" focusIndex="103" moveRight="104" moveLeft="102"/>
-			<descriptor id="Ocult92" region="region11" focusIndex="104"/>
-			<descriptor id="M92Desc" region="region4" focusIndex="105" moveRight="106"/>
-			<descriptor id="M93Desc" region="region5" focusIndex="106" moveRight="107" moveLeft="105"/>
-			<descriptor id="M94Desc" region="region6" focusIndex="107" moveRight="108" moveLeft="106"/>
-			<descriptor id="M95Desc" region="region7" focusIndex="108" moveRight="109" moveLeft="107"/>
-			<descriptor id="M96Desc" region="region8" focusIndex="109" moveRight="110" moveLeft="108"/>
-			<descriptor id="M97Desc" region="region9" focusIndex="110" moveRight="111" moveLeft="109"/>
-			<descriptor id="M98Desc" region="region10" focusIndex="111" moveRight="112" moveLeft="110"/>
-			<descriptor id="Ocult99" region="region11" focusIndex="112"/>
+			<descriptor id="M0Desc" region="region4" focusIndex="0" moveRight="1"/>
+			<descriptor id="M1Desc" region="region5" focusIndex="1" moveRight="2" moveLeft="0"/>
+			<descriptor id="M2Desc" region="region6" focusIndex="2" moveRight="3" moveLeft="1"/>
+			<descriptor id="M3Desc" region="region7" focusIndex="3" moveRight="4" moveLeft="2"/>
+			<descriptor id="M4Desc" region="region8" focusIndex="4" moveRight="5" moveLeft="3"/>
+			<descriptor id="M5Desc" region="region9" focusIndex="5" moveRight="6" moveLeft="4"/>
+			<descriptor id="M6Desc" region="region10" focusIndex="6" moveLeft="5"/>
 			<descriptor id="T1S1Desc" region="region2" explicitDur="38.39800000190735s"/>
 			<descriptor id="T2S2Desc" region="region2" explicitDur="14.191999912261963s"/>
 			<descriptor id="T3S3Desc" region="region2" explicitDur="99.72399997711182s"/>
@@ -238,32 +133,6 @@
 		<!--connectorBase-->
 		<connectorBase id="connBaseId">
 			<importBase alias="conn" documentURI="defaultConnBase.ncl"/>
-			<causalConnector id="onBeginAttributionSetVar">
-				<connectorParam name="var"/>
-				<simpleCondition role="onBeginAttribution"/>
-				<simpleAction role="set" value="$var"/>
-			</causalConnector>
-			<causalConnector id="onEndFocusTestStopStartSet_var">
-				<connectorParam name="val"/>
-				<connectorParam name="val1"/>
-				<connectorParam name="val2"/>
-				<compoundCondition operator="and">
-					<simpleCondition max="unbounded" role="onEndAttribution"/>
-					<assessmentStatement comparator="eq">
-						<attributeAssessment role="onFocus" eventType="attribution" attributeType="nodeProperty"/>
-						<valueAssessment value="$val"/>
-					</assessmentStatement>
-					<assessmentStatement comparator="eq">
-						<attributeAssessment role="previous" eventType="attribution" attributeType="nodeProperty"/>
-						<valueAssessment value="$val1"/>
-					</assessmentStatement>
-				</compoundCondition>
-				<compoundAction operator="seq">
-					<simpleAction max="unbounded" role="stop"/>
-					<simpleAction max="unbounded" role="start"/>
-					<simpleAction role="set" value="$val2"/>
-				</compoundAction>
-			</causalConnector>
 			<causalConnector id="onSelectionStopStart">
 				<simpleCondition role="onSelection"/>
 				<compoundAction operator="seq">
@@ -271,10 +140,30 @@
 					<simpleAction max="unbounded" role="start"/>
 				</compoundAction>
 			</causalConnector>
+			<causalConnector id="onSelectionTestStopStartSet">
+				<connectorParam name="var"/>
+				<compoundCondition operator="and">
+					<simpleCondition role="onSelection"/>
+					<assessmentStatement comparator="eq">
+						<attributeAssessment role="janela" eventType="attribution" attributeType="nodeProperty"/>
+						<valueAssessment value="$var"/>
+					</assessmentStatement>
+				</compoundCondition>
+				<compoundAction operator="seq">
+					<simpleAction max="unbounded" role="stop"/>
+					<simpleAction max="unbounded" role="start"/>
+					<simpleAction role="set" value="$var"/>
+				</compoundAction>
+			</causalConnector>
 		</connectorBase>
 	</head>
 	<body>
 		<port id="Begin" component="Video"/>
+		<!--medias settings-->
+		<media id="sett" type="application/x-ncl-settings">
+			<property name="service.currentFocus"/>
+			<property name="janela" value="1"/>
+		</media>
 		<media id="Video" src="raw/video/192.168.108.1(projeto-cas)/videoSCV01375449316875.mp4" descriptor="VideoDesc">
 			<area id="AT2S2" begin="38.39800000190735s"/>
 			<area id="AT3S3" begin="52.58999991416931s"/>
@@ -374,18 +263,6 @@
 			<area id="AT97S61" begin="4176.165999889374s"/>
 			<area id="AT98S62" begin="4197.523999929428s"/>
 		</media>
-		<link xconnector="conn#onBeginStart">
-			<bind role="onBegin" component="Video"/>
-			<bind role="start" component="Slides" interface="T1S1Port"/>
-			<bind role="start" component="SlideMenu" interface="1TS1Port"/>
-			<bind role="start" component="SlideMenu" interface="2TS2Port"/>
-			<bind role="start" component="SlideMenu" interface="3TS3Port"/>
-			<bind role="start" component="SlideMenu" interface="4TS4Port"/>
-			<bind role="start" component="SlideMenu" interface="5TS5Port"/>
-			<bind role="start" component="SlideMenu" interface="6TS6Port"/>
-			<bind role="start" component="SlideMenu" interface="7TS7Port"/>
-			<bind role="start" component="Dummy"/>
-		</link>
 		<context id="Slides">
 			<port id="T1S1Port" component="T1S1"/>
 			<port id="T2S2Port" component="T2S2"/>
@@ -973,950 +850,1543 @@
 			</link>
 		</context>
 		<context id="SlideMenu">
-			<port id="1TS1Port" component="1TS1"/>
-			<port id="2TS2Port" component="2TS2"/>
-			<port id="3TS3Port" component="3TS3"/>
-			<port id="4TS4Port" component="4TS4"/>
-			<port id="5TS5Port" component="5TS5"/>
-			<port id="6TS6Port" component="6TS6"/>
-			<port id="7TS7Port" component="7TS7"/>
-			<port id="8TS8Port" component="8TS8"/>
-			<port id="9TS9Port" component="9TS9"/>
-			<port id="10TS10Port" component="10TS10"/>
-			<port id="11TS11Port" component="11TS11"/>
-			<port id="12TS12Port" component="12TS12"/>
-			<port id="13TS13Port" component="13TS13"/>
-			<port id="14TS14Port" component="14TS14"/>
-			<port id="15TS15Port" component="15TS15"/>
-			<port id="16TS16Port" component="16TS16"/>
-			<port id="17TS17Port" component="17TS17"/>
-			<port id="18TS18Port" component="18TS18"/>
-			<port id="19TS19Port" component="19TS19"/>
-			<port id="20TS20Port" component="20TS20"/>
-			<port id="21TS21Port" component="21TS21"/>
-			<port id="22TS22Port" component="22TS22"/>
-			<port id="23TS23Port" component="23TS23"/>
-			<port id="24TS24Port" component="24TS24"/>
-			<port id="25TS25Port" component="25TS25"/>
-			<port id="26TS26Port" component="26TS26"/>
-			<port id="27TS27Port" component="27TS27"/>
-			<port id="28TS28Port" component="28TS28"/>
-			<port id="29TS29Port" component="29TS29"/>
-			<port id="30TS30Port" component="30TS30"/>
-			<port id="31TS31Port" component="31TS31"/>
-			<port id="32TS32Port" component="32TS32"/>
-			<port id="33TS33Port" component="33TS33"/>
-			<port id="34TS34Port" component="34TS34"/>
-			<port id="35TS35Port" component="35TS35"/>
-			<port id="36TS36Port" component="36TS36"/>
-			<port id="37TS35Port" component="37TS35"/>
-			<port id="38TS37Port" component="38TS37"/>
-			<port id="39TS38Port" component="39TS38"/>
-			<port id="40TS39Port" component="40TS39"/>
-			<port id="41TS40Port" component="41TS40"/>
-			<port id="42TS41Port" component="42TS41"/>
-			<port id="43TS40Port" component="43TS40"/>
-			<port id="44TS41Port" component="44TS41"/>
-			<port id="45TS42Port" component="45TS42"/>
-			<port id="46TS43Port" component="46TS43"/>
-			<port id="47TS44Port" component="47TS44"/>
-			<port id="48TS43Port" component="48TS43"/>
-			<port id="49TS44Port" component="49TS44"/>
-			<port id="50TS45Port" component="50TS45"/>
-			<port id="51TS44Port" component="51TS44"/>
-			<port id="52TS42Port" component="52TS42"/>
-			<port id="53TS40Port" component="53TS40"/>
-			<port id="54TS38Port" component="54TS38"/>
-			<port id="55TS39Port" component="55TS39"/>
-			<port id="56TS40Port" component="56TS40"/>
-			<port id="57TS41Port" component="57TS41"/>
-			<port id="58TS43Port" component="58TS43"/>
-			<port id="59TS45Port" component="59TS45"/>
-			<port id="60TS46Port" component="60TS46"/>
-			<port id="61TS45Port" component="61TS45"/>
-			<port id="62TS46Port" component="62TS46"/>
-			<port id="63TS47Port" component="63TS47"/>
-			<port id="64TS48Port" component="64TS48"/>
-			<port id="65TS47Port" component="65TS47"/>
-			<port id="66TS48Port" component="66TS48"/>
-			<port id="67TS49Port" component="67TS49"/>
-			<port id="68TS50Port" component="68TS50"/>
-			<port id="69TS51Port" component="69TS51"/>
-			<port id="70TS50Port" component="70TS50"/>
-			<port id="71TS51Port" component="71TS51"/>
-			<port id="72TS52Port" component="72TS52"/>
-			<port id="73TS53Port" component="73TS53"/>
-			<port id="74TS52Port" component="74TS52"/>
-			<port id="75TS51Port" component="75TS51"/>
-			<port id="76TS50Port" component="76TS50"/>
-			<port id="77TS52Port" component="77TS52"/>
-			<port id="78TS53Port" component="78TS53"/>
-			<port id="79TS51Port" component="79TS51"/>
-			<port id="80TS52Port" component="80TS52"/>
-			<port id="81TS53Port" component="81TS53"/>
-			<port id="82TS54Port" component="82TS54"/>
-			<port id="83TS55Port" component="83TS55"/>
-			<port id="84TS54Port" component="84TS54"/>
-			<port id="85TS55Port" component="85TS55"/>
-			<port id="86TS56Port" component="86TS56"/>
-			<port id="87TS57Port" component="87TS57"/>
-			<port id="88TS58Port" component="88TS58"/>
-			<port id="89TS59Port" component="89TS59"/>
-			<port id="90TS60Port" component="90TS60"/>
-			<port id="91TS59Port" component="91TS59"/>
-			<port id="92TS60Port" component="92TS60"/>
-			<port id="93TS61Port" component="93TS61"/>
-			<port id="94TS60Port" component="94TS60"/>
-			<port id="95TS61Port" component="95TS61"/>
-			<port id="96TS62Port" component="96TS62"/>
-			<port id="97TS61Port" component="97TS61"/>
-			<port id="98TS62Port" component="98TS62"/>
-			<media id="1TS1" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="M1Desc"/>
-			<media id="2TS2" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide2.png" descriptor="M2Desc"/>
-			<media id="3TS3" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide3.png" descriptor="M3Desc"/>
-			<media id="4TS4" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide4.png" descriptor="M4Desc"/>
-			<media id="5TS5" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide5.png" descriptor="M5Desc"/>
-			<media id="6TS6" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide6.png" descriptor="M6Desc"/>
-			<media id="7TS7" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide7.png" descriptor="M7Desc"/>
-			<media id="8TS8" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide8.png" descriptor="M8Desc"/>
-			<media id="9TS9" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide9.png" descriptor="M9Desc"/>
-			<media id="10TS10" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide10.png" descriptor="M10Desc"/>
-			<media id="11TS11" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide11.png" descriptor="M11Desc"/>
-			<media id="12TS12" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide12.png" descriptor="M12Desc"/>
-			<media id="13TS13" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide13.png" descriptor="M13Desc"/>
-			<media id="14TS14" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="M14Desc"/>
-			<media id="15TS15" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide15.png" descriptor="M15Desc"/>
-			<media id="16TS16" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide16.png" descriptor="M16Desc"/>
-			<media id="17TS17" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide17.png" descriptor="M17Desc"/>
-			<media id="18TS18" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide18.png" descriptor="M18Desc"/>
-			<media id="19TS19" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide19.png" descriptor="M19Desc"/>
-			<media id="20TS20" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide20.png" descriptor="M20Desc"/>
-			<media id="21TS21" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide21.png" descriptor="M21Desc"/>
-			<media id="22TS22" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide22.png" descriptor="M22Desc"/>
-			<media id="23TS23" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide23.png" descriptor="M23Desc"/>
-			<media id="24TS24" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide24.png" descriptor="M24Desc"/>
-			<media id="25TS25" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide25.png" descriptor="M25Desc"/>
-			<media id="26TS26" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide26.png" descriptor="M26Desc"/>
-			<media id="27TS27" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide27.png" descriptor="M27Desc"/>
-			<media id="28TS28" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide28.png" descriptor="M28Desc"/>
-			<media id="29TS29" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide29.png" descriptor="M29Desc"/>
-			<media id="30TS30" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide30.png" descriptor="M30Desc"/>
-			<media id="31TS31" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide31.png" descriptor="M31Desc"/>
-			<media id="32TS32" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide32.png" descriptor="M32Desc"/>
-			<media id="33TS33" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide33.png" descriptor="M33Desc"/>
-			<media id="34TS34" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide34.png" descriptor="M34Desc"/>
-			<media id="35TS35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="M35Desc"/>
-			<media id="36TS36" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide36.png" descriptor="M36Desc"/>
-			<media id="37TS35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="M37Desc"/>
-			<media id="38TS37" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide37.png" descriptor="M38Desc"/>
-			<media id="39TS38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="M39Desc"/>
-			<media id="40TS39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="M40Desc"/>
-			<media id="41TS40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M41Desc"/>
-			<media id="42TS41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M42Desc"/>
-			<media id="43TS40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M43Desc"/>
-			<media id="44TS41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M44Desc"/>
-			<media id="45TS42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="M45Desc"/>
-			<media id="46TS43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M46Desc"/>
-			<media id="47TS44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M47Desc"/>
-			<media id="48TS43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M48Desc"/>
-			<media id="49TS44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M49Desc"/>
-			<media id="50TS45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M50Desc"/>
-			<media id="51TS44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M51Desc"/>
-			<media id="52TS42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="M52Desc"/>
-			<media id="53TS40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M53Desc"/>
-			<media id="54TS38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="M54Desc"/>
-			<media id="55TS39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="M55Desc"/>
-			<media id="56TS40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M56Desc"/>
-			<media id="57TS41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M57Desc"/>
-			<media id="58TS43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M58Desc"/>
-			<media id="59TS45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M59Desc"/>
-			<media id="60TS46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="M60Desc"/>
-			<media id="61TS45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M61Desc"/>
-			<media id="62TS46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="M62Desc"/>
-			<media id="63TS47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="M63Desc"/>
-			<media id="64TS48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="M64Desc"/>
-			<media id="65TS47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="M65Desc"/>
-			<media id="66TS48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="M66Desc"/>
-			<media id="67TS49" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide49.png" descriptor="M67Desc"/>
-			<media id="68TS50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M68Desc"/>
-			<media id="69TS51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M69Desc"/>
-			<media id="70TS50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M70Desc"/>
-			<media id="71TS51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M71Desc"/>
-			<media id="72TS52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M72Desc"/>
-			<media id="73TS53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M73Desc"/>
-			<media id="74TS52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M74Desc"/>
-			<media id="75TS51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M75Desc"/>
-			<media id="76TS50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M76Desc"/>
-			<media id="77TS52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M77Desc"/>
-			<media id="78TS53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M78Desc"/>
-			<media id="79TS51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M79Desc"/>
-			<media id="80TS52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M80Desc"/>
-			<media id="81TS53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M81Desc"/>
-			<media id="82TS54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="M82Desc"/>
-			<media id="83TS55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="M83Desc"/>
-			<media id="84TS54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="M84Desc"/>
-			<media id="85TS55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="M85Desc"/>
-			<media id="86TS56" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide56.png" descriptor="M86Desc"/>
-			<media id="87TS57" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide57.png" descriptor="M87Desc"/>
-			<media id="88TS58" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide58.png" descriptor="M88Desc"/>
-			<media id="89TS59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="M89Desc"/>
-			<media id="90TS60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M90Desc"/>
-			<media id="91TS59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="M91Desc"/>
-			<media id="92TS60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M92Desc"/>
-			<media id="93TS61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M93Desc"/>
-			<media id="94TS60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M94Desc"/>
-			<media id="95TS61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M95Desc"/>
-			<media id="96TS62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="M96Desc"/>
-			<media id="97TS61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M97Desc"/>
-			<media id="98TS62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="M98Desc"/>
+			<port id="LPort" component="left"/>
+			<port id="RPort" component="right"/>
+			<port id="T1_S1Port" component="T1_S1"/>
+			<port id="T2_S2Port" component="T2_S2"/>
+			<port id="T3_S3Port" component="T3_S3"/>
+			<port id="T4_S4Port" component="T4_S4"/>
+			<port id="T5_S5Port" component="T5_S5"/>
+			<port id="T6_S6Port" component="T6_S6"/>
+			<port id="T7_S7Port" component="T7_S7"/>
+			<port id="T8_S8Port" component="T8_S8"/>
+			<port id="T9_S9Port" component="T9_S9"/>
+			<port id="T10_S10Port" component="T10_S10"/>
+			<port id="T11_S11Port" component="T11_S11"/>
+			<port id="T12_S12Port" component="T12_S12"/>
+			<port id="T13_S13Port" component="T13_S13"/>
+			<port id="T14_S14Port" component="T14_S14"/>
+			<port id="T15_S15Port" component="T15_S15"/>
+			<port id="T16_S16Port" component="T16_S16"/>
+			<port id="T17_S17Port" component="T17_S17"/>
+			<port id="T18_S18Port" component="T18_S18"/>
+			<port id="T19_S19Port" component="T19_S19"/>
+			<port id="T20_S20Port" component="T20_S20"/>
+			<port id="T21_S21Port" component="T21_S21"/>
+			<port id="T22_S22Port" component="T22_S22"/>
+			<port id="T23_S23Port" component="T23_S23"/>
+			<port id="T24_S24Port" component="T24_S24"/>
+			<port id="T25_S25Port" component="T25_S25"/>
+			<port id="T26_S26Port" component="T26_S26"/>
+			<port id="T27_S27Port" component="T27_S27"/>
+			<port id="T28_S28Port" component="T28_S28"/>
+			<port id="T29_S29Port" component="T29_S29"/>
+			<port id="T30_S30Port" component="T30_S30"/>
+			<port id="T31_S31Port" component="T31_S31"/>
+			<port id="T32_S32Port" component="T32_S32"/>
+			<port id="T33_S33Port" component="T33_S33"/>
+			<port id="T34_S34Port" component="T34_S34"/>
+			<port id="T35_S35Port" component="T35_S35"/>
+			<port id="T36_S36Port" component="T36_S36"/>
+			<port id="T37_S35Port" component="T37_S35"/>
+			<port id="T38_S37Port" component="T38_S37"/>
+			<port id="T39_S38Port" component="T39_S38"/>
+			<port id="T40_S39Port" component="T40_S39"/>
+			<port id="T41_S40Port" component="T41_S40"/>
+			<port id="T42_S41Port" component="T42_S41"/>
+			<port id="T43_S40Port" component="T43_S40"/>
+			<port id="T44_S41Port" component="T44_S41"/>
+			<port id="T45_S42Port" component="T45_S42"/>
+			<port id="T46_S43Port" component="T46_S43"/>
+			<port id="T47_S44Port" component="T47_S44"/>
+			<port id="T48_S43Port" component="T48_S43"/>
+			<port id="T49_S44Port" component="T49_S44"/>
+			<port id="T50_S45Port" component="T50_S45"/>
+			<port id="T51_S44Port" component="T51_S44"/>
+			<port id="T52_S42Port" component="T52_S42"/>
+			<port id="T53_S40Port" component="T53_S40"/>
+			<port id="T54_S38Port" component="T54_S38"/>
+			<port id="T55_S39Port" component="T55_S39"/>
+			<port id="T56_S40Port" component="T56_S40"/>
+			<port id="T57_S41Port" component="T57_S41"/>
+			<port id="T58_S43Port" component="T58_S43"/>
+			<port id="T59_S45Port" component="T59_S45"/>
+			<port id="T60_S46Port" component="T60_S46"/>
+			<port id="T61_S45Port" component="T61_S45"/>
+			<port id="T62_S46Port" component="T62_S46"/>
+			<port id="T63_S47Port" component="T63_S47"/>
+			<port id="T64_S48Port" component="T64_S48"/>
+			<port id="T65_S47Port" component="T65_S47"/>
+			<port id="T66_S48Port" component="T66_S48"/>
+			<port id="T67_S49Port" component="T67_S49"/>
+			<port id="T68_S50Port" component="T68_S50"/>
+			<port id="T69_S51Port" component="T69_S51"/>
+			<port id="T70_S50Port" component="T70_S50"/>
+			<port id="T71_S51Port" component="T71_S51"/>
+			<port id="T72_S52Port" component="T72_S52"/>
+			<port id="T73_S53Port" component="T73_S53"/>
+			<port id="T74_S52Port" component="T74_S52"/>
+			<port id="T75_S51Port" component="T75_S51"/>
+			<port id="T76_S50Port" component="T76_S50"/>
+			<port id="T77_S52Port" component="T77_S52"/>
+			<port id="T78_S53Port" component="T78_S53"/>
+			<port id="T79_S51Port" component="T79_S51"/>
+			<port id="T80_S52Port" component="T80_S52"/>
+			<port id="T81_S53Port" component="T81_S53"/>
+			<port id="T82_S54Port" component="T82_S54"/>
+			<port id="T83_S55Port" component="T83_S55"/>
+			<port id="T84_S54Port" component="T84_S54"/>
+			<port id="T85_S55Port" component="T85_S55"/>
+			<port id="T86_S56Port" component="T86_S56"/>
+			<port id="T87_S57Port" component="T87_S57"/>
+			<port id="T88_S58Port" component="T88_S58"/>
+			<port id="T89_S59Port" component="T89_S59"/>
+			<port id="T90_S60Port" component="T90_S60"/>
+			<port id="T91_S59Port" component="T91_S59"/>
+			<port id="T92_S60Port" component="T92_S60"/>
+			<port id="T93_S61Port" component="T93_S61"/>
+			<port id="T94_S60Port" component="T94_S60"/>
+			<port id="T95_S61Port" component="T95_S61"/>
+			<port id="T96_S62Port" component="T96_S62"/>
+			<port id="T97_S61Port" component="T97_S61"/>
+			<port id="T98_S62Port" component="T98_S62"/>
+			<media id="left" src="raw/left.png" descriptor="M0Desc"/>
+			<media id="right" src="raw/right.png" descriptor="M6Desc"/>
+			<media id="T1_S1" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="M1Desc"/>
+			<media id="T2_S2" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide2.png" descriptor="M2Desc"/>
+			<media id="T3_S3" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide3.png" descriptor="M3Desc"/>
+			<media id="T4_S4" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide4.png" descriptor="M4Desc"/>
+			<media id="T5_S5" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide5.png" descriptor="M5Desc"/>
+			<media id="T6_S6" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide6.png" descriptor="M1Desc"/>
+			<media id="T7_S7" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide7.png" descriptor="M2Desc"/>
+			<media id="T8_S8" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide8.png" descriptor="M3Desc"/>
+			<media id="T9_S9" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide9.png" descriptor="M4Desc"/>
+			<media id="T10_S10" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide10.png" descriptor="M5Desc"/>
+			<media id="T11_S11" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide11.png" descriptor="M1Desc"/>
+			<media id="T12_S12" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide12.png" descriptor="M2Desc"/>
+			<media id="T13_S13" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide13.png" descriptor="M3Desc"/>
+			<media id="T14_S14" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide14.png" descriptor="M4Desc"/>
+			<media id="T15_S15" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide15.png" descriptor="M5Desc"/>
+			<media id="T16_S16" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide16.png" descriptor="M1Desc"/>
+			<media id="T17_S17" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide17.png" descriptor="M2Desc"/>
+			<media id="T18_S18" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide18.png" descriptor="M3Desc"/>
+			<media id="T19_S19" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide19.png" descriptor="M4Desc"/>
+			<media id="T20_S20" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide20.png" descriptor="M5Desc"/>
+			<media id="T21_S21" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide21.png" descriptor="M1Desc"/>
+			<media id="T22_S22" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide22.png" descriptor="M2Desc"/>
+			<media id="T23_S23" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide23.png" descriptor="M3Desc"/>
+			<media id="T24_S24" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide24.png" descriptor="M4Desc"/>
+			<media id="T25_S25" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide25.png" descriptor="M5Desc"/>
+			<media id="T26_S26" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide26.png" descriptor="M1Desc"/>
+			<media id="T27_S27" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide27.png" descriptor="M2Desc"/>
+			<media id="T28_S28" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide28.png" descriptor="M3Desc"/>
+			<media id="T29_S29" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide29.png" descriptor="M4Desc"/>
+			<media id="T30_S30" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide30.png" descriptor="M5Desc"/>
+			<media id="T31_S31" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide31.png" descriptor="M1Desc"/>
+			<media id="T32_S32" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide32.png" descriptor="M2Desc"/>
+			<media id="T33_S33" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide33.png" descriptor="M3Desc"/>
+			<media id="T34_S34" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide34.png" descriptor="M4Desc"/>
+			<media id="T35_S35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="M5Desc"/>
+			<media id="T36_S36" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide36.png" descriptor="M1Desc"/>
+			<media id="T37_S35" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide35.png" descriptor="M2Desc"/>
+			<media id="T38_S37" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide37.png" descriptor="M3Desc"/>
+			<media id="T39_S38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="M4Desc"/>
+			<media id="T40_S39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="M5Desc"/>
+			<media id="T41_S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M1Desc"/>
+			<media id="T42_S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M2Desc"/>
+			<media id="T43_S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M3Desc"/>
+			<media id="T44_S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M4Desc"/>
+			<media id="T45_S42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="M5Desc"/>
+			<media id="T46_S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M1Desc"/>
+			<media id="T47_S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M2Desc"/>
+			<media id="T48_S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M3Desc"/>
+			<media id="T49_S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M4Desc"/>
+			<media id="T50_S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M5Desc"/>
+			<media id="T51_S44" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide44.png" descriptor="M1Desc"/>
+			<media id="T52_S42" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide42.png" descriptor="M2Desc"/>
+			<media id="T53_S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M3Desc"/>
+			<media id="T54_S38" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide38.png" descriptor="M4Desc"/>
+			<media id="T55_S39" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide39.png" descriptor="M5Desc"/>
+			<media id="T56_S40" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide40.png" descriptor="M1Desc"/>
+			<media id="T57_S41" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide41.png" descriptor="M2Desc"/>
+			<media id="T58_S43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide43.png" descriptor="M3Desc"/>
+			<media id="T59_S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M4Desc"/>
+			<media id="T60_S46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="M5Desc"/>
+			<media id="T61_S45" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide45.png" descriptor="M1Desc"/>
+			<media id="T62_S46" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide46.png" descriptor="M2Desc"/>
+			<media id="T63_S47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="M3Desc"/>
+			<media id="T64_S48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="M4Desc"/>
+			<media id="T65_S47" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide47.png" descriptor="M5Desc"/>
+			<media id="T66_S48" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide48.png" descriptor="M1Desc"/>
+			<media id="T67_S49" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide49.png" descriptor="M2Desc"/>
+			<media id="T68_S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M3Desc"/>
+			<media id="T69_S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M4Desc"/>
+			<media id="T70_S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M5Desc"/>
+			<media id="T71_S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M1Desc"/>
+			<media id="T72_S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M2Desc"/>
+			<media id="T73_S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M3Desc"/>
+			<media id="T74_S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M4Desc"/>
+			<media id="T75_S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M5Desc"/>
+			<media id="T76_S50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide50.png" descriptor="M1Desc"/>
+			<media id="T77_S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M2Desc"/>
+			<media id="T78_S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M3Desc"/>
+			<media id="T79_S51" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide51.png" descriptor="M4Desc"/>
+			<media id="T80_S52" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide52.png" descriptor="M5Desc"/>
+			<media id="T81_S53" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide53.png" descriptor="M1Desc"/>
+			<media id="T82_S54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="M2Desc"/>
+			<media id="T83_S55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="M3Desc"/>
+			<media id="T84_S54" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide54.png" descriptor="M4Desc"/>
+			<media id="T85_S55" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide55.png" descriptor="M5Desc"/>
+			<media id="T86_S56" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide56.png" descriptor="M1Desc"/>
+			<media id="T87_S57" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide57.png" descriptor="M2Desc"/>
+			<media id="T88_S58" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide58.png" descriptor="M3Desc"/>
+			<media id="T89_S59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="M4Desc"/>
+			<media id="T90_S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M5Desc"/>
+			<media id="T91_S59" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide59.png" descriptor="M1Desc"/>
+			<media id="T92_S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M2Desc"/>
+			<media id="T93_S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M3Desc"/>
+			<media id="T94_S60" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide60.png" descriptor="M4Desc"/>
+			<media id="T95_S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M5Desc"/>
+			<media id="T96_S62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="M1Desc"/>
+			<media id="T97_S61" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide61.png" descriptor="M2Desc"/>
+			<media id="T98_S62" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide62.png" descriptor="M3Desc"/>
 		</context>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="1TS1Port"/>
+		<link id="inicio" xconnector="conn#onBeginStart">
+			<bind role="onBegin" component="Video"/>
+			<bind role="start" component="Slides" interface="T1S1Port"/>
+			<bind role="start" component="SlideMenu" interface="T1_S1Port"/>
+			<bind role="start" component="SlideMenu" interface="T2_S2Port"/>
+			<bind role="start" component="SlideMenu" interface="T3_S3Port"/>
+			<bind role="start" component="SlideMenu" interface="T4_S4Port"/>
+			<bind role="start" component="SlideMenu" interface="T5_S5Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+		</link>
+		<link id="chooseT1_S1" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T1_S1Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video"/>
 			<bind role="start" component="Slides" interface="T1S1Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="2TS2Port"/>
+		<link id="chooseT2_S2" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T2_S2Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT2S2"/>
 			<bind role="start" component="Slides" interface="T2S2Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="3TS3Port"/>
+		<link id="chooseT3_S3" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T3_S3Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT3S3"/>
 			<bind role="start" component="Slides" interface="T3S3Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="4TS4Port"/>
+		<link id="chooseT4_S4" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T4_S4Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT4S4"/>
 			<bind role="start" component="Slides" interface="T4S4Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="5TS5Port"/>
+		<link id="chooseT5_S5" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T5_S5Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT5S5"/>
 			<bind role="start" component="Slides" interface="T5S5Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="6TS6Port"/>
+		<link id="chooseT6_S6" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T6_S6Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT6S6"/>
 			<bind role="start" component="Slides" interface="T6S6Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="7TS7Port"/>
+		<link id="chooseT7_S7" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T7_S7Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT7S7"/>
 			<bind role="start" component="Slides" interface="T7S7Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="8TS8Port"/>
+		<link id="chooseT8_S8" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T8_S8Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT8S8"/>
 			<bind role="start" component="Slides" interface="T8S8Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="9TS9Port"/>
+		<link id="chooseT9_S9" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T9_S9Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT9S9"/>
 			<bind role="start" component="Slides" interface="T9S9Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="10TS10Port"/>
+		<link id="chooseT10_S10" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T10_S10Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT10S10"/>
 			<bind role="start" component="Slides" interface="T10S10Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="11TS11Port"/>
+		<link id="chooseT11_S11" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T11_S11Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT11S11"/>
 			<bind role="start" component="Slides" interface="T11S11Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="12TS12Port"/>
+		<link id="chooseT12_S12" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T12_S12Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT12S12"/>
 			<bind role="start" component="Slides" interface="T12S12Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="13TS13Port"/>
+		<link id="chooseT13_S13" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T13_S13Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT13S13"/>
 			<bind role="start" component="Slides" interface="T13S13Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="14TS14Port"/>
+		<link id="chooseT14_S14" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T14_S14Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT14S14"/>
 			<bind role="start" component="Slides" interface="T14S14Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="15TS15Port"/>
+		<link id="chooseT15_S15" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T15_S15Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT15S15"/>
 			<bind role="start" component="Slides" interface="T15S15Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="16TS16Port"/>
+		<link id="chooseT16_S16" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T16_S16Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT16S16"/>
 			<bind role="start" component="Slides" interface="T16S16Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="17TS17Port"/>
+		<link id="chooseT17_S17" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T17_S17Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT17S17"/>
 			<bind role="start" component="Slides" interface="T17S17Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="18TS18Port"/>
+		<link id="chooseT18_S18" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T18_S18Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT18S18"/>
 			<bind role="start" component="Slides" interface="T18S18Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="19TS19Port"/>
+		<link id="chooseT19_S19" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T19_S19Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT19S19"/>
 			<bind role="start" component="Slides" interface="T19S19Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="20TS20Port"/>
+		<link id="chooseT20_S20" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T20_S20Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT20S20"/>
 			<bind role="start" component="Slides" interface="T20S20Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="21TS21Port"/>
+		<link id="chooseT21_S21" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T21_S21Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT21S21"/>
 			<bind role="start" component="Slides" interface="T21S21Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="22TS22Port"/>
+		<link id="chooseT22_S22" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T22_S22Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT22S22"/>
 			<bind role="start" component="Slides" interface="T22S22Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="23TS23Port"/>
+		<link id="chooseT23_S23" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T23_S23Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT23S23"/>
 			<bind role="start" component="Slides" interface="T23S23Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="24TS24Port"/>
+		<link id="chooseT24_S24" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T24_S24Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT24S24"/>
 			<bind role="start" component="Slides" interface="T24S24Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="25TS25Port"/>
+		<link id="chooseT25_S25" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T25_S25Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT25S25"/>
 			<bind role="start" component="Slides" interface="T25S25Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="26TS26Port"/>
+		<link id="chooseT26_S26" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T26_S26Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT26S26"/>
 			<bind role="start" component="Slides" interface="T26S26Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="27TS27Port"/>
+		<link id="chooseT27_S27" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T27_S27Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT27S27"/>
 			<bind role="start" component="Slides" interface="T27S27Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="28TS28Port"/>
+		<link id="chooseT28_S28" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T28_S28Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT28S28"/>
 			<bind role="start" component="Slides" interface="T28S28Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="29TS29Port"/>
+		<link id="chooseT29_S29" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T29_S29Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT29S29"/>
 			<bind role="start" component="Slides" interface="T29S29Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="30TS30Port"/>
+		<link id="chooseT30_S30" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T30_S30Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT30S30"/>
 			<bind role="start" component="Slides" interface="T30S30Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="31TS31Port"/>
+		<link id="chooseT31_S31" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T31_S31Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT31S31"/>
 			<bind role="start" component="Slides" interface="T31S31Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="32TS32Port"/>
+		<link id="chooseT32_S32" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T32_S32Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT32S32"/>
 			<bind role="start" component="Slides" interface="T32S32Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="33TS33Port"/>
+		<link id="chooseT33_S33" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T33_S33Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT33S33"/>
 			<bind role="start" component="Slides" interface="T33S33Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="34TS34Port"/>
+		<link id="chooseT34_S34" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T34_S34Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT34S34"/>
 			<bind role="start" component="Slides" interface="T34S34Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="35TS35Port"/>
+		<link id="chooseT35_S35" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T35_S35Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT35S35"/>
 			<bind role="start" component="Slides" interface="T35S35Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="36TS36Port"/>
+		<link id="chooseT36_S36" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T36_S36Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT36S36"/>
 			<bind role="start" component="Slides" interface="T36S36Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="37TS35Port"/>
+		<link id="chooseT37_S35" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T37_S35Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT37S35"/>
 			<bind role="start" component="Slides" interface="T37S35Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="38TS37Port"/>
+		<link id="chooseT38_S37" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T38_S37Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT38S37"/>
 			<bind role="start" component="Slides" interface="T38S37Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="39TS38Port"/>
+		<link id="chooseT39_S38" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T39_S38Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT39S38"/>
 			<bind role="start" component="Slides" interface="T39S38Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="40TS39Port"/>
+		<link id="chooseT40_S39" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T40_S39Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT40S39"/>
 			<bind role="start" component="Slides" interface="T40S39Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="41TS40Port"/>
+		<link id="chooseT41_S40" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T41_S40Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT41S40"/>
 			<bind role="start" component="Slides" interface="T41S40Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="42TS41Port"/>
+		<link id="chooseT42_S41" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T42_S41Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT42S41"/>
 			<bind role="start" component="Slides" interface="T42S41Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="43TS40Port"/>
+		<link id="chooseT43_S40" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T43_S40Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT43S40"/>
 			<bind role="start" component="Slides" interface="T43S40Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="44TS41Port"/>
+		<link id="chooseT44_S41" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T44_S41Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT44S41"/>
 			<bind role="start" component="Slides" interface="T44S41Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="45TS42Port"/>
+		<link id="chooseT45_S42" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T45_S42Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT45S42"/>
 			<bind role="start" component="Slides" interface="T45S42Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="46TS43Port"/>
+		<link id="chooseT46_S43" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T46_S43Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT46S43"/>
 			<bind role="start" component="Slides" interface="T46S43Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="47TS44Port"/>
+		<link id="chooseT47_S44" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T47_S44Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT47S44"/>
 			<bind role="start" component="Slides" interface="T47S44Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="48TS43Port"/>
+		<link id="chooseT48_S43" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T48_S43Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT48S43"/>
 			<bind role="start" component="Slides" interface="T48S43Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="49TS44Port"/>
+		<link id="chooseT49_S44" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T49_S44Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT49S44"/>
 			<bind role="start" component="Slides" interface="T49S44Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="50TS45Port"/>
+		<link id="chooseT50_S45" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T50_S45Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT50S45"/>
 			<bind role="start" component="Slides" interface="T50S45Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="51TS44Port"/>
+		<link id="chooseT51_S44" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T51_S44Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT51S44"/>
 			<bind role="start" component="Slides" interface="T51S44Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="52TS42Port"/>
+		<link id="chooseT52_S42" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T52_S42Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT52S42"/>
 			<bind role="start" component="Slides" interface="T52S42Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="53TS40Port"/>
+		<link id="chooseT53_S40" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T53_S40Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT53S40"/>
 			<bind role="start" component="Slides" interface="T53S40Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="54TS38Port"/>
+		<link id="chooseT54_S38" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T54_S38Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT54S38"/>
 			<bind role="start" component="Slides" interface="T54S38Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="55TS39Port"/>
+		<link id="chooseT55_S39" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T55_S39Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT55S39"/>
 			<bind role="start" component="Slides" interface="T55S39Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="56TS40Port"/>
+		<link id="chooseT56_S40" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T56_S40Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT56S40"/>
 			<bind role="start" component="Slides" interface="T56S40Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="57TS41Port"/>
+		<link id="chooseT57_S41" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T57_S41Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT57S41"/>
 			<bind role="start" component="Slides" interface="T57S41Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="58TS43Port"/>
+		<link id="chooseT58_S43" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T58_S43Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT58S43"/>
 			<bind role="start" component="Slides" interface="T58S43Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="59TS45Port"/>
+		<link id="chooseT59_S45" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T59_S45Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT59S45"/>
 			<bind role="start" component="Slides" interface="T59S45Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="60TS46Port"/>
+		<link id="chooseT60_S46" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T60_S46Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT60S46"/>
 			<bind role="start" component="Slides" interface="T60S46Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="61TS45Port"/>
+		<link id="chooseT61_S45" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T61_S45Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT61S45"/>
 			<bind role="start" component="Slides" interface="T61S45Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="62TS46Port"/>
+		<link id="chooseT62_S46" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T62_S46Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT62S46"/>
 			<bind role="start" component="Slides" interface="T62S46Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="63TS47Port"/>
+		<link id="chooseT63_S47" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T63_S47Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT63S47"/>
 			<bind role="start" component="Slides" interface="T63S47Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="64TS48Port"/>
+		<link id="chooseT64_S48" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T64_S48Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT64S48"/>
 			<bind role="start" component="Slides" interface="T64S48Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="65TS47Port"/>
+		<link id="chooseT65_S47" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T65_S47Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT65S47"/>
 			<bind role="start" component="Slides" interface="T65S47Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="66TS48Port"/>
+		<link id="chooseT66_S48" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T66_S48Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT66S48"/>
 			<bind role="start" component="Slides" interface="T66S48Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="67TS49Port"/>
+		<link id="chooseT67_S49" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T67_S49Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT67S49"/>
 			<bind role="start" component="Slides" interface="T67S49Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="68TS50Port"/>
+		<link id="chooseT68_S50" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T68_S50Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT68S50"/>
 			<bind role="start" component="Slides" interface="T68S50Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="69TS51Port"/>
+		<link id="chooseT69_S51" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T69_S51Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT69S51"/>
 			<bind role="start" component="Slides" interface="T69S51Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="70TS50Port"/>
+		<link id="chooseT70_S50" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T70_S50Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT70S50"/>
 			<bind role="start" component="Slides" interface="T70S50Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="71TS51Port"/>
+		<link id="chooseT71_S51" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T71_S51Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT71S51"/>
 			<bind role="start" component="Slides" interface="T71S51Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="72TS52Port"/>
+		<link id="chooseT72_S52" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T72_S52Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT72S52"/>
 			<bind role="start" component="Slides" interface="T72S52Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="73TS53Port"/>
+		<link id="chooseT73_S53" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T73_S53Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT73S53"/>
 			<bind role="start" component="Slides" interface="T73S53Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="74TS52Port"/>
+		<link id="chooseT74_S52" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T74_S52Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT74S52"/>
 			<bind role="start" component="Slides" interface="T74S52Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="75TS51Port"/>
+		<link id="chooseT75_S51" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T75_S51Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT75S51"/>
 			<bind role="start" component="Slides" interface="T75S51Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="76TS50Port"/>
+		<link id="chooseT76_S50" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T76_S50Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT76S50"/>
 			<bind role="start" component="Slides" interface="T76S50Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="77TS52Port"/>
+		<link id="chooseT77_S52" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T77_S52Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT77S52"/>
 			<bind role="start" component="Slides" interface="T77S52Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="78TS53Port"/>
+		<link id="chooseT78_S53" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T78_S53Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT78S53"/>
 			<bind role="start" component="Slides" interface="T78S53Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="79TS51Port"/>
+		<link id="chooseT79_S51" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T79_S51Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT79S51"/>
 			<bind role="start" component="Slides" interface="T79S51Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="80TS52Port"/>
+		<link id="chooseT80_S52" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T80_S52Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT80S52"/>
 			<bind role="start" component="Slides" interface="T80S52Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="81TS53Port"/>
+		<link id="chooseT81_S53" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T81_S53Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT81S53"/>
 			<bind role="start" component="Slides" interface="T81S53Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="82TS54Port"/>
+		<link id="chooseT82_S54" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T82_S54Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT82S54"/>
 			<bind role="start" component="Slides" interface="T82S54Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="83TS55Port"/>
+		<link id="chooseT83_S55" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T83_S55Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT83S55"/>
 			<bind role="start" component="Slides" interface="T83S55Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="84TS54Port"/>
+		<link id="chooseT84_S54" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T84_S54Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT84S54"/>
 			<bind role="start" component="Slides" interface="T84S54Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="85TS55Port"/>
+		<link id="chooseT85_S55" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T85_S55Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT85S55"/>
 			<bind role="start" component="Slides" interface="T85S55Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="86TS56Port"/>
+		<link id="chooseT86_S56" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T86_S56Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT86S56"/>
 			<bind role="start" component="Slides" interface="T86S56Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="87TS57Port"/>
+		<link id="chooseT87_S57" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T87_S57Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT87S57"/>
 			<bind role="start" component="Slides" interface="T87S57Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="88TS58Port"/>
+		<link id="chooseT88_S58" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T88_S58Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT88S58"/>
 			<bind role="start" component="Slides" interface="T88S58Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="89TS59Port"/>
+		<link id="chooseT89_S59" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T89_S59Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT89S59"/>
 			<bind role="start" component="Slides" interface="T89S59Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="90TS60Port"/>
+		<link id="chooseT90_S60" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T90_S60Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT90S60"/>
 			<bind role="start" component="Slides" interface="T90S60Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="91TS59Port"/>
+		<link id="chooseT91_S59" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T91_S59Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT91S59"/>
 			<bind role="start" component="Slides" interface="T91S59Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="92TS60Port"/>
+		<link id="chooseT92_S60" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T92_S60Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT92S60"/>
 			<bind role="start" component="Slides" interface="T92S60Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="93TS61Port"/>
+		<link id="chooseT93_S61" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T93_S61Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT93S61"/>
 			<bind role="start" component="Slides" interface="T93S61Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="94TS60Port"/>
+		<link id="chooseT94_S60" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T94_S60Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT94S60"/>
 			<bind role="start" component="Slides" interface="T94S60Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="95TS61Port"/>
+		<link id="chooseT95_S61" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T95_S61Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT95S61"/>
 			<bind role="start" component="Slides" interface="T95S61Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="96TS62Port"/>
+		<link id="chooseT96_S62" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T96_S62Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT96S62"/>
 			<bind role="start" component="Slides" interface="T96S62Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="97TS61Port"/>
+		<link id="chooseT97_S61" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T97_S61Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT97S61"/>
 			<bind role="start" component="Slides" interface="T97S61Port"/>
 		</link>
-		<link xconnector="onSelectionStopStart">
-			<bind role="onSelection" component="SlideMenu" interface="98TS62Port"/>
+		<link id="chooseT98_S62" xconnector="onSelectionStopStart">
+			<bind role="onSelection" component="SlideMenu" interface="T98_S62Port"/>
 			<bind role="stop" component="Video"/>
 			<bind role="stop" component="Slides"/>
 			<bind role="start" component="Video" interface="AT98S62"/>
 			<bind role="start" component="Slides" interface="T98S62Port"/>
 		</link>
-		<context id="Dummy">
-			<port id="D8P" component="D8"/>
-			<port id="D15P" component="D15"/>
-			<port id="D22P" component="D22"/>
-			<port id="D29P" component="D29"/>
-			<port id="D36P" component="D36"/>
-			<port id="D43P" component="D43"/>
-			<port id="D50P" component="D50"/>
-			<port id="D57P" component="D57"/>
-			<port id="D64P" component="D64"/>
-			<port id="D64P" component="D64"/>
-			<port id="D71P" component="D71"/>
-			<port id="D78P" component="D78"/>
-			<port id="D85P" component="D85"/>
-			<port id="D92P" component="D92"/>
-			<port id="D99P" component="D99"/>
-			<media id="D8" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult8"/>
-			<media id="D15" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult15"/>
-			<media id="D22" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult22"/>
-			<media id="D29" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult29"/>
-			<media id="D36" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult36"/>
-			<media id="D43" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult43"/>
-			<media id="D50" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult50"/>
-			<media id="D57" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult57"/>
-			<media id="D64" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult64"/>
-			<media id="D71" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult71"/>
-			<media id="D78" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult78"/>
-			<media id="D85" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult85"/>
-			<media id="D92" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult92"/>
-			<media id="D99" src="raw/slide/192.168.108.1(projeto-cas)/slides/Slide1.png" descriptor="Ocult99"/>
-		</context>
-		<!--medias settings-->
-		<media id="sett" type="application/x-ncl-settings">
-			<property name="service.currentFocus"/>
-			<property name="prev" value="7"/>
-		</media>
-		<link xconnector="onEndFocusTestStopStartSet_var">
-			<bind role="onEndAttribution" component="sett" interface="service.currentFocus"/>
+		<link id="backM1" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="2"/>
+			</bind>
 			<bind role="stop" component="SlideMenu"/>
-			<bind role="start" component="SlideMenu" interface="8TS8Port"/>
-			<bind role="start" component="SlideMenu" interface="9TS9Port"/>
-			<bind role="start" component="SlideMenu" interface="10TS10Port"/>
-			<bind role="start" component="SlideMenu" interface="11TS11Port"/>
-			<bind role="start" component="SlideMenu" interface="12TS12Port"/>
-			<bind role="start" component="SlideMenu" interface="13TS13Port"/>
-			<bind role="start" component="SlideMenu" interface="14TS14Port"/>
-			<bind role="onFocus" component="sett" interface="service.currentFocus">
-				<bindParam name="val" value="8"/>
-			</bind>
-			<bind role="previous" component="sett" interface="prev">
-				<bindParam name="val1" value="7"/>
-			</bind>
-			<bind role="set" component="sett" interface="service.currentFocus">
-				<bindParam name="val2" value="9"/>
+			<bind role="start" component="SlideMenu" interface="T1_S1Port"/>
+			<bind role="start" component="SlideMenu" interface="T2_S2Port"/>
+			<bind role="start" component="SlideMenu" interface="T3_S3Port"/>
+			<bind role="start" component="SlideMenu" interface="T4_S4Port"/>
+			<bind role="start" component="SlideMenu" interface="T5_S5Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="1"/>
 			</bind>
 		</link>
-		<link xconnector="onBeginAttributionSetVar">
-			<bind role="onBeginAttribution" component="sett" interface="service.currentFocus"/>
-			<bind role="get" component="sett" interface="service.currentFocus"/>
-			<bind role="set" component="sett" interface="prev">
-				<bindParam name="var" value="$get"/>
+		<link id="goM2" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="1"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T6_S6Port"/>
+			<bind role="start" component="SlideMenu" interface="T7_S7Port"/>
+			<bind role="start" component="SlideMenu" interface="T8_S8Port"/>
+			<bind role="start" component="SlideMenu" interface="T9_S9Port"/>
+			<bind role="start" component="SlideMenu" interface="T10_S10Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="2"/>
+			</bind>
+		</link>
+		<link id="backM2" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="3"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T6_S6Port"/>
+			<bind role="start" component="SlideMenu" interface="T7_S7Port"/>
+			<bind role="start" component="SlideMenu" interface="T8_S8Port"/>
+			<bind role="start" component="SlideMenu" interface="T9_S9Port"/>
+			<bind role="start" component="SlideMenu" interface="T10_S10Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="2"/>
+			</bind>
+		</link>		
+		<link id="goM3" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="2"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T11_S11Port"/>
+			<bind role="start" component="SlideMenu" interface="T12_S12Port"/>
+			<bind role="start" component="SlideMenu" interface="T13_S13Port"/>
+			<bind role="start" component="SlideMenu" interface="T14_S14Port"/>
+			<bind role="start" component="SlideMenu" interface="T15_S15Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="3"/>
+			</bind>
+		</link>
+		<link id="backM3" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="4"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T11_S11Port"/>
+			<bind role="start" component="SlideMenu" interface="T12_S12Port"/>
+			<bind role="start" component="SlideMenu" interface="T13_S13Port"/>
+			<bind role="start" component="SlideMenu" interface="T14_S14Port"/>
+			<bind role="start" component="SlideMenu" interface="T15_S15Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="3"/>
+			</bind>
+		</link>		
+		<link id="goM4" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="3"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T16_S16Port"/>
+			<bind role="start" component="SlideMenu" interface="T17_S17Port"/>
+			<bind role="start" component="SlideMenu" interface="T18_S18Port"/>
+			<bind role="start" component="SlideMenu" interface="T19_S19Port"/>
+			<bind role="start" component="SlideMenu" interface="T20_S20Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="4"/>
+			</bind>
+		</link>
+		<link id="backM4" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="5"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T16_S16Port"/>
+			<bind role="start" component="SlideMenu" interface="T17_S17Port"/>
+			<bind role="start" component="SlideMenu" interface="T18_S18Port"/>
+			<bind role="start" component="SlideMenu" interface="T19_S19Port"/>
+			<bind role="start" component="SlideMenu" interface="T20_S20Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="4"/>
+			</bind>
+		</link>		
+		<link id="goM5" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="4"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T21_S21Port"/>
+			<bind role="start" component="SlideMenu" interface="T22_S22Port"/>
+			<bind role="start" component="SlideMenu" interface="T23_S23Port"/>
+			<bind role="start" component="SlideMenu" interface="T24_S24Port"/>
+			<bind role="start" component="SlideMenu" interface="T25_S25Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="5"/>
+			</bind>
+		</link>
+		<link id="backM5" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="6"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T21_S21Port"/>
+			<bind role="start" component="SlideMenu" interface="T22_S22Port"/>
+			<bind role="start" component="SlideMenu" interface="T23_S23Port"/>
+			<bind role="start" component="SlideMenu" interface="T24_S24Port"/>
+			<bind role="start" component="SlideMenu" interface="T25_S25Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="5"/>
+			</bind>
+		</link>		
+		<link id="goM6" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="5"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T26_S26Port"/>
+			<bind role="start" component="SlideMenu" interface="T27_S27Port"/>
+			<bind role="start" component="SlideMenu" interface="T28_S28Port"/>
+			<bind role="start" component="SlideMenu" interface="T29_S29Port"/>
+			<bind role="start" component="SlideMenu" interface="T30_S30Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="6"/>
+			</bind>
+		</link>
+		<link id="backM6" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="7"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T26_S26Port"/>
+			<bind role="start" component="SlideMenu" interface="T27_S27Port"/>
+			<bind role="start" component="SlideMenu" interface="T28_S28Port"/>
+			<bind role="start" component="SlideMenu" interface="T29_S29Port"/>
+			<bind role="start" component="SlideMenu" interface="T30_S30Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="6"/>
+			</bind>
+		</link>		
+		<link id="goM7" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="6"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T31_S31Port"/>
+			<bind role="start" component="SlideMenu" interface="T32_S32Port"/>
+			<bind role="start" component="SlideMenu" interface="T33_S33Port"/>
+			<bind role="start" component="SlideMenu" interface="T34_S34Port"/>
+			<bind role="start" component="SlideMenu" interface="T35_S35Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="7"/>
+			</bind>
+		</link>
+		<link id="backM7" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="8"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T31_S31Port"/>
+			<bind role="start" component="SlideMenu" interface="T32_S32Port"/>
+			<bind role="start" component="SlideMenu" interface="T33_S33Port"/>
+			<bind role="start" component="SlideMenu" interface="T34_S34Port"/>
+			<bind role="start" component="SlideMenu" interface="T35_S35Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="7"/>
+			</bind>
+		</link>		
+		<link id="goM8" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="7"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T36_S36Port"/>
+			<bind role="start" component="SlideMenu" interface="T37_S35Port"/>
+			<bind role="start" component="SlideMenu" interface="T38_S37Port"/>
+			<bind role="start" component="SlideMenu" interface="T39_S38Port"/>
+			<bind role="start" component="SlideMenu" interface="T40_S39Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="8"/>
+			</bind>
+		</link>
+		<link id="backM8" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="9"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T36_S36Port"/>
+			<bind role="start" component="SlideMenu" interface="T37_S35Port"/>
+			<bind role="start" component="SlideMenu" interface="T38_S37Port"/>
+			<bind role="start" component="SlideMenu" interface="T39_S38Port"/>
+			<bind role="start" component="SlideMenu" interface="T40_S39Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="8"/>
+			</bind>
+		</link>		
+		<link id="goM9" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="8"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T41_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T42_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T43_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T44_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T45_S42Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="9"/>
+			</bind>
+		</link>
+		<link id="backM9" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="10"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T41_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T42_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T43_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T44_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T45_S42Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="9"/>
+			</bind>
+		</link>		
+		<link id="goM10" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="9"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T46_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T47_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T48_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T49_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T50_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="10"/>
+			</bind>
+		</link>
+		<link id="backM10" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="11"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T46_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T47_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T48_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T49_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T50_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="10"/>
+			</bind>
+		</link>		
+		<link id="goM11" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="10"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T51_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T52_S42Port"/>
+			<bind role="start" component="SlideMenu" interface="T53_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T54_S38Port"/>
+			<bind role="start" component="SlideMenu" interface="T55_S39Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="11"/>
+			</bind>
+		</link>
+		<link id="backM11" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="12"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T51_S44Port"/>
+			<bind role="start" component="SlideMenu" interface="T52_S42Port"/>
+			<bind role="start" component="SlideMenu" interface="T53_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T54_S38Port"/>
+			<bind role="start" component="SlideMenu" interface="T55_S39Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="11"/>
+			</bind>
+		</link>		
+		<link id="goM12" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="11"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T56_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T57_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T58_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T59_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="T60_S46Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="12"/>
+			</bind>
+		</link>
+		<link id="backM12" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="13"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T56_S40Port"/>
+			<bind role="start" component="SlideMenu" interface="T57_S41Port"/>
+			<bind role="start" component="SlideMenu" interface="T58_S43Port"/>
+			<bind role="start" component="SlideMenu" interface="T59_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="T60_S46Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="12"/>
+			</bind>
+		</link>		
+		<link id="goM13" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="12"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T61_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="T62_S46Port"/>
+			<bind role="start" component="SlideMenu" interface="T63_S47Port"/>
+			<bind role="start" component="SlideMenu" interface="T64_S48Port"/>
+			<bind role="start" component="SlideMenu" interface="T65_S47Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="13"/>
+			</bind>
+		</link>
+		<link id="backM13" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="14"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T61_S45Port"/>
+			<bind role="start" component="SlideMenu" interface="T62_S46Port"/>
+			<bind role="start" component="SlideMenu" interface="T63_S47Port"/>
+			<bind role="start" component="SlideMenu" interface="T64_S48Port"/>
+			<bind role="start" component="SlideMenu" interface="T65_S47Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="13"/>
+			</bind>
+		</link>		
+		<link id="goM14" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="13"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T66_S48Port"/>
+			<bind role="start" component="SlideMenu" interface="T67_S49Port"/>
+			<bind role="start" component="SlideMenu" interface="T68_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="T69_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T70_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="14"/>
+			</bind>
+		</link>
+		<link id="backM14" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="15"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T66_S48Port"/>
+			<bind role="start" component="SlideMenu" interface="T67_S49Port"/>
+			<bind role="start" component="SlideMenu" interface="T68_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="T69_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T70_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="14"/>
+			</bind>
+		</link>		
+		<link id="goM15" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="14"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T71_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T72_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T73_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T74_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T75_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="15"/>
+			</bind>
+		</link>
+		<link id="backM15" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="16"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T71_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T72_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T73_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T74_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T75_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="15"/>
+			</bind>
+		</link>		
+		<link id="goM16" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="15"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T76_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="T77_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T78_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T79_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T80_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="16"/>
+			</bind>
+		</link>
+		<link id="backM16" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="17"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T76_S50Port"/>
+			<bind role="start" component="SlideMenu" interface="T77_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="T78_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T79_S51Port"/>
+			<bind role="start" component="SlideMenu" interface="T80_S52Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="16"/>
+			</bind>
+		</link>		
+		<link id="goM17" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="16"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T81_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T82_S54Port"/>
+			<bind role="start" component="SlideMenu" interface="T83_S55Port"/>
+			<bind role="start" component="SlideMenu" interface="T84_S54Port"/>
+			<bind role="start" component="SlideMenu" interface="T85_S55Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="17"/>
+			</bind>
+		</link>
+		<link id="backM17" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="18"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T81_S53Port"/>
+			<bind role="start" component="SlideMenu" interface="T82_S54Port"/>
+			<bind role="start" component="SlideMenu" interface="T83_S55Port"/>
+			<bind role="start" component="SlideMenu" interface="T84_S54Port"/>
+			<bind role="start" component="SlideMenu" interface="T85_S55Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="17"/>
+			</bind>
+		</link>		
+		<link id="goM18" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="17"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T86_S56Port"/>
+			<bind role="start" component="SlideMenu" interface="T87_S57Port"/>
+			<bind role="start" component="SlideMenu" interface="T88_S58Port"/>
+			<bind role="start" component="SlideMenu" interface="T89_S59Port"/>
+			<bind role="start" component="SlideMenu" interface="T90_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="18"/>
+			</bind>
+		</link>
+		<link id="backM18" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="19"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T86_S56Port"/>
+			<bind role="start" component="SlideMenu" interface="T87_S57Port"/>
+			<bind role="start" component="SlideMenu" interface="T88_S58Port"/>
+			<bind role="start" component="SlideMenu" interface="T89_S59Port"/>
+			<bind role="start" component="SlideMenu" interface="T90_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="18"/>
+			</bind>
+		</link>		
+		<link id="goM19" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="18"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T91_S59Port"/>
+			<bind role="start" component="SlideMenu" interface="T92_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="T93_S61Port"/>
+			<bind role="start" component="SlideMenu" interface="T94_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="T95_S61Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="19"/>
+			</bind>
+		</link>
+		<link id="backM19" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="LPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="20"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T91_S59Port"/>
+			<bind role="start" component="SlideMenu" interface="T92_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="T93_S61Port"/>
+			<bind role="start" component="SlideMenu" interface="T94_S60Port"/>
+			<bind role="start" component="SlideMenu" interface="T95_S61Port"/>
+			<bind role="start" component="SlideMenu" interface="RPort"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="19"/>
+			</bind>
+		</link>		
+		<link id="goM20" xconnector="onSelectionTestStopStartSet">
+			<bind role="onSelection" component="SlideMenu" interface="RPort"/>
+			<bind role="janela" component="sett" interface="janela">
+				<bindParam name="var" value="19"/>
+			</bind>
+			<bind role="stop" component="SlideMenu"/>
+			<bind role="start" component="SlideMenu" interface="LPort"/>
+			<bind role="start" component="SlideMenu" interface="T96_S62Port"/>
+			<bind role="start" component="SlideMenu" interface="T97_S61Port"/>
+			<bind role="start" component="SlideMenu" interface="T98_S62Port"/>
+			<bind role="set" component="sett" interface="janela">
+				<bindParam name="var" value="20"/>
 			</bind>
 		</link>
 	</body>
