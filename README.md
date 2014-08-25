@@ -1,4 +1,4 @@
-CAS Player for NCL
+CAS NCL Player
 =========
 
 ## Overview
